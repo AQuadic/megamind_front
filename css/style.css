@@ -461,6 +461,11 @@ line-height: 26px;
 .ourPrograms{
 overflow: hidden;
 }
+.ourPrograms.backcolor{
+padding: 40px 0px 50px;
+background: rgba(25, 160, 187, 0.05);
+margin: 60px 0px 48px;
+}
 .ourPrograms .head_title{
 margin-bottom: 28px;
 }
@@ -888,10 +893,11 @@ margin-bottom: 8px;
   line-height: 26px;
   margin-bottom: 4px;
 }
-.courseDetails .cart .part2 ul li p{
+.courseDetails .cart .part2 ul li p , .courseDetails .cart .part2 ul li a{
   font-size: 16px;
   line-height: 25px;
   color: #404040;
+  font-family: "DM Sans3";
 }
 .courseDetails .curriculum{
 margin-top: 74px;
@@ -1131,10 +1137,16 @@ max-width: 370px;
 }
 .gallery .imgGallery .item {
   max-width: 560px;
-  max-height: 452px;
+  max-height: 490px;
   border-radius: 10px;
   margin: auto;
   height: 100%;
+}
+.gallery .imgGallery .item p{
+  font-size: 16px;
+line-height: 21px;
+text-align: center;
+margin-top: 12px;
 }
 .gallery .imgGallery .item img{
   width: 100%;
