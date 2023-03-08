@@ -536,7 +536,7 @@ line-height: 30px;
 .courses .items{
 display: flex;
 align-items: center;
-gap: 20px;
+gap: 60px 20px;
 flex-wrap: wrap;
 justify-content: center;
 }
@@ -650,17 +650,46 @@ justify-content: space-between;
 }
 
 .reviews .content .ts {
-  width: 860px;
+  max-width: 860px;
+  width: 100%;
 }
 .reviews .content  .item{
   
 }
-.reviews .content .ts  .item img {
+.reviews .content .ts .item img {
   height: 255px;
-  max-width: 400px;
-  width: auto;
-  max-width: 100%;
+ 
+  width: 100%;
+  max-width: 430px;
   margin: auto;
+}
+
+.reviews .content .ts .owl-dots{
+  margin-top: 44px;
+
+}
+
+.reviews .content .ts .owl-dot span{
+  width: 12px;
+  height: 12px;
+  background: #D9D9D9;
+}
+.reviews .content .ts .owl-dot.active span{
+  background: #6685C9;
+
+}
+@media(max-width:1200px){
+  .reviews .content {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+}
+@media(max-width:992px){
+  .reviews .content .ts .item img {
+    max-height: 255px;
+   
+    height: 100%;
+}
 }
 /*==================================end reviews==============================*/
 
@@ -839,7 +868,453 @@ margin-bottom: 8px;
     align-items: center;
 }
 }
-/*==================================end courseDetails==============================*/
+/*==================================end courseDetails==============================*/ 
+
+
+/*==================================start bookingForm==============================*/
+.bookingForm{
+margin-top: 90px;
+}
+.bookingForm h2{
+  font-size: 32px;
+line-height: 42px;
+text-align: center;
+}
+.bookingForm h2 span{
+  color: var(--main_color);
+}
+.bookingForm .content{
+  border: 1px solid #D2D2D2;
+border-radius: 10px;
+padding: 32px 16px;
+margin: 28px auto 0px; 
+max-width: 682px;
+
+}
+.bookingForm .content h3{
+  font-size: 20px;
+line-height: 26px;
+color: #515151;
+margin-bottom: 60px;
+text-align: center;
+}
+.bookingForm .content form{
+  margin: auto;
+  max-width: 458px;
+}
+.form_page{
+ 
+width: 100%;
+
+}
+.form_page label{
+  font-size: 16px;
+line-height: 21px;
+color: #2E1F26;
+margin-bottom: 8px;
+}
+.form_page label span{
+  color: #FC0F0F;
+}
+.form_page .form-control{
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #DBDBDB;
+border-radius: 10px;
+padding: 6px 16px;
+
+height: 40px;
+}
+.form_page .form-control::placeholder{
+  font-size: 14px;
+  line-height: 25px;
+  color: #999999;
+font-family: "DM Sans3";
+}
+.bookingForm .content form .btn_page{
+  margin: 44px auto 10px;
+
+}
+@media(max-width:500px){
+  .bookingForm .content {
+   
+ 
+    padding: 32px 6px;
+    
+}
+}
+/*==================================end bookingForm==============================*/
+
+
+
+
+/*==================================start about==============================*/
+.about{
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 50px;
+}
+.about .part{
+  max-width: 512px;
+}
+.about .part .head_title{
+  justify-content: flex-start;
+  margin-bottom: 14px;
+}
+.about .part .head_title span{
+  font-size: 64px;
+line-height: 83px;
+
+}
+.about .part p{
+  font-size: 20px;
+line-height: 25px;
+}
+.about .part p:not(:last-of-type){
+  margin-bottom: 26px;
+}
+.about .part p br{
+  margin-bottom: 20px;
+}
+.about .aboutimg{
+  height: 492px;
+  width: auto;
+}
+.ourVission{
+  background: rgba(25, 160, 187, 0.05);
+  padding: 58px 0px;
+}
+.ourVission .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 40px;
+flex-wrap: wrap;
+
+}
+.ourVission .content .part{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+.ourVission .content .part img{
+  width: 66px;
+height: 66px;
+object-fit: contain;
+}
+.ourVission .content .part h2{
+  font-size: 20px;
+line-height: 26px;
+}
+.ourVission .content .part p{
+  font-size: 16px;
+line-height: 21px;
+max-width: 370px;
+}
+
+.gallery{
+
+}
+.gallery .imgGallery{
+ margin-top: 30px; 
+}
+.gallery .imgGallery  .owl-nav{
+  
+}
+.owl-theme .owl-nav [class*=owl-]:hover {
+  background: transparent;
+ 
+}
+.gallery .imgGallery  .owl-nav button{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.gallery .imgGallery  .owl-nav .owl-prev{
+  left: -50px;
+}
+.gallery .imgGallery  .owl-nav .owl-next{
+  right: -50px;
+}
+.owl-carousel .owl-stage-outer {
+  
+  direction: initial;
+}
+.gallery .imgGallery .item {
+  max-width: 560px;
+  max-height: 452px;
+  border-radius: 10px;
+  margin: auto;
+  height: 100%;
+}
+.gallery .imgGallery .item img{
+  width: 100%;
+  height: 100%;
+}
+.gallery .imgGallery .owl-dot span{
+  width: 12px;
+height: 12px;
+background: #E6E6E6;
+}
+.gallery .imgGallery .owl-dot.active span{
+  background: #FF7443;
+}
+
+@media(max-width:992px){
+  .about .aboutimg{
+  display: none;
+  }
+}
+/*==================================end about==============================*/
+
+
+/*==================================start career==============================*/
+.career{
+overflow: hidden;
+}
+.career .career_h2{
+  font-size: 32px;
+line-height: 42px;
+margin-bottom: 12px;
+}
+.career .career_p{
+  font-size: 20px;
+line-height: 30px;
+margin-bottom: 70px;
+}
+.career .form_Career {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+position: relative;
+padding: 60px 18px 52px;
+box-shadow: 0px 1px 5px #7474745c;
+    margin: 10px 0px;
+}
+.career .form_Career::before {
+  content: "";
+  position: absolute;
+  background-image: url('../images/backimgCareer.webp');
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+html[dir=rtl] .career .form_Career::before {
+  transform: rotateY(180deg);
+}
+.career .form_Career  .part1{
+  width: fit-content;
+}
+.career .form_Career  .part1 .form-check{
+  margin-bottom: 10px;
+}
+.career .form_Career  .part1 h3{
+  font-size: 24px;
+line-height: 31px;
+color: #2E1F26;
+margin-bottom: 18px;
+}
+.career .form_Career .part1 input {
+  width: 18px;
+   border-radius: 2px; 
+  height: 18px;
+  float: left;
+}
+html[dir=rtl] .career .form_Career .part1 input{
+  float: right;
+}
+.form-check-input:checked {
+  background-color: #FF7443;
+  border-color: #FF7443;
+}
+ 
+
+.career .form_Career  .part1 label {
+  font-size: 16px;
+line-height: 30px;
+font-family: "DM Sans3";
+padding: 0px 6px;
+}
+.career .form_Career .part2{
+  max-width: 636px;
+  
+}
+.career .form_Career .upload{
+  height: 34px;
+  margin-top: 14px;
+  position: relative;
+}
+.career .form_Career .upload input{
+  cursor: pointer;
+    direction: rtl;
+    height: 100%;
+    margin: 0;
+    opacity: 0;
+    padding: 0;
+    position: absolute;
+    width: 202px;
+    z-index: 50;
+}
+.career .form_Career .upload button{
+  align-items: center;
+    background: none;
+    border: none;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+}
+.career .form_Career .upload button .plus{
+  color: var(--main_color);
+    font-size: 48px;
+    line-height: 62px;
+}
+.career .form_Career .upload button label{
+  font-size: 16px;
+line-height: 21px;
+color: #2E1F26;
+    margin: 0;
+    text-align: center;
+    padding: 0px 8px;
+
+}
+.career .form_Career .upload button label span{
+  color: var(--main_color);
+} 
+.career textarea{
+  min-height: 110px;
+}
+@media(max-width:992px){
+  .career .form_Career {
+  
+    flex-wrap: wrap;
+}
+}
+/*==================================end career==============================*/
+/*==================================start contact==============================*/
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+ 
+}
+.contact .part1{
+
+}
+.contact .part1 h3 ,.contact .part1 h4{
+  font-size: 24px;
+  line-height: 31px;
+  
+  color: #2E1F26;
+  margin-bottom: 16px;
+}
+.contact .part1 .address{
+display: flex;
+align-items: center;
+gap: 10px;
+margin-bottom: 50px;
+}
+.contact .part1 .address img{
+height: 16px ;
+width: auto;
+}
+.contact .part1 .address p{
+  font-size: 16px;
+  line-height: 25px;
+  color: #404040;
+  max-width: 380px;
+}
+.contact .part1 h4{ 
+
+}
+.contact .part1 ul{
+padding: 0;
+}
+.contact .part1 ul li{
+  margin-bottom: 12px;
+}
+.contact .part1 ul li a{
+display: flex;
+align-items: center;
+gap: 8px;
+
+}
+.contact .part1 ul li img {
+  width: auto;
+  height: 15px;
+  object-fit: contain;
+}
+.contact .part1 ul li p{
+  font-size: 16px;
+  line-height: 21px;
+  color: #404040;
+}
+.form_page div{
+  padding: 0;
+}
+
+
+.contact  .part2{
+max-width: 636px;
+}
+.contact  .part2 h3{
+  font-size: 24px;
+  line-height: 31px;
+  margin-bottom: 28px;
+  color: #2E1F26;
+}
+.contact  .part2 form input{
+max-width: 460px;
+}
+.contact  .part2 form textarea{
+min-height: 110px;
+  }
+  .contact  .part2 form .btn_page{
+    margin-top: 28px;
+  }
+.contact  .part2 form input[type="tel"]{
+    padding-left: 60px;
+    position: relative;
+  }
+  
+  .contact  .part2 form .tel{
+    max-width: 460px;
+    position: relative;
+  }
+  .contact .part2 form .tel::before {
+    content: "+20";
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    z-index: 50;
+    font-size: 14px;
+    line-height: 25px;
+    transform: translateY(-50%);
+}
+.contact .part2 form .tel::after {
+  content: "";
+  position: absolute;
+  left: 44px;
+  top: 0;
+  z-index: 50;
+ height: 100%;
+ width: 1px;
+ background-color: #DBDBDB;
+}
+@media(max-width:992px){
+  .contact {
+  
+    flex-wrap: wrap;
+}
+}
+/*==================================end contact==============================*/
 
 /*==================================start footer==============================*/
 footer{

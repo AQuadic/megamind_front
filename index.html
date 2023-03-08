@@ -48,16 +48,16 @@
                 <a class="nav-link active" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="aboutUs">About Us</a>
+                <a class="nav-link" href="aboutUs.html">About Us</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="courses.html">Courses</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Careers</a>
+                <a class="nav-link" href="careers.html">Careers</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
+                <a class="nav-link" href="contactUs.html">Contact Us</a>
               </li>
              
             </ul>
@@ -80,7 +80,7 @@
                 Better <span>Future</span>
             </h2>
             <h3>For Your Kids</h3>
-            <button class="btn_header"> Explore Courses</button>
+            <a href="courses.html" class="btn_header"> Explore Courses</a>
         </div>
     </div>
        
@@ -125,7 +125,7 @@
                 <li>Web development</li>
                 <li>Mobile Development</li>
             </ul>
-            <button class="btn_page">Explore Courses</button>
+            <a href="courses.html" class="btn_page">Explore Courses</a>
         </div>
         <div class="part2">
             <img src="./images/programs1.webp" class="img_programs" alt="programs">
@@ -145,7 +145,7 @@
                 <li>Mobile Development</li>
                 <li>Design</li>
             </ul>
-            <button class="btn_page">Explore Courses</button>
+            <a href="courses.html" class="btn_page">Explore Courses</a>
         </div>
         <div class="part2">
             <img src="./images/programs2.webp" class="img_programs" alt="programs">
@@ -165,7 +165,7 @@
                 <li>Mobile Development</li>
                 <li>Design</li>
             </ul>
-            <button class="btn_page">Explore Courses</button>
+            <a href="courses.html" class="btn_page">Explore Courses</a>
         </div>
         <div class="part2">
             <img src="./images/programs3.webp" class="img_programs" alt="programs">
@@ -220,7 +220,7 @@
              </div>
         </a>
     </div>
-    <a href="" class="btn_page2">More Courses</a>
+    <a href="courses.html" class="btn_page2">More Courses</a>
 </section>
 
 <section class="reviews  mb100">
@@ -339,30 +339,27 @@
     <script src="js/bootstrap.js"></script>
     <script src="./js/owl.carousel.min.js"></script>
    <script>
-     $(".owl-carousel").owlCarousel({
-       
-        
-        dots: true,
-        margin: 10,
-        nav: false,
-        loop:false,
-        responsiveClass: true,
-        responsive: {
-          0: {
-            items: 1,
-            center: false,
-          },
-          768: {
-            items: 1.7,
-          },
-          992: {
-            items: 1.5,
-          },
-          1200: {
-            items: 1.8,
-          },
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:20,
+    nav:false,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+          
         },
-      });
+        992:{
+            items:2,
+           
+        },
+        1200:{
+            items:1.9,
+            
+           
+        }
+    }
+})
    </script>
 </body>
 </html>
