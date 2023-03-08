@@ -107,6 +107,17 @@ html::-webkit-scrollbar-track {
 .head_title::before {
  
 }
+@media(max-width:580px){
+  .head_title span {
+    font-size: 56px;
+    line-height: 100px;
+}
+.head_title h2 {
+ 
+  font-size: 20px;
+  line-height: 42px;
+}
+}
 .btn_page {
   width: 236px;
   height: 44px;
@@ -520,6 +531,22 @@ line-height: 30px;
   
     margin: 70px auto;
 }
+}
+@media(max-width:580px){
+  .programs h3 {
+    font-size: 28px;
+    
+    margin-bottom: 8px;
+}
+.programs h4 {
+  font-size: 20px;
+
+}
+.programs p ,.programs ul li{
+  font-size: 18px;
+ 
+}
+ 
 }
 /*==================================end ourPrograms==============================*/
 
@@ -942,6 +969,22 @@ font-family: "DM Sans3";
     padding: 32px 6px;
     
 }
+.bookingForm h2 {
+  font-size: 26px;
+ 
+}
+.bookingForm .content {
+ 
+
+  margin: 18px auto 0px;
+
+}
+.bookingForm .content h3 {
+  font-size: 18px;
+  
+  margin-bottom: 22px;
+  
+}
 }
 /*==================================end bookingForm==============================*/
 
@@ -1069,6 +1112,7 @@ background: #E6E6E6;
   display: none;
   }
 }
+
 /*==================================end about==============================*/
 
 
@@ -1104,6 +1148,7 @@ box-shadow: 0px 1px 5px #7474745c;
   height: 100%;
   top: 0;
   left: 0;
+  z-index: -1;
 }
 
 html[dir=rtl] .career .form_Career::before {
@@ -1196,6 +1241,18 @@ color: #2E1F26;
     flex-wrap: wrap;
 }
 }
+@media(max-width:992px){
+  .career .career_h2 {
+    font-size: 28px;
+    
+    margin-bottom: 8px;
+}
+  .career .career_p {
+    font-size: 18px;
+   
+    margin-bottom: 46px;
+}
+}
 /*==================================end career==============================*/
 /*==================================start contact==============================*/
 
@@ -1256,11 +1313,6 @@ gap: 8px;
   line-height: 21px;
   color: #404040;
 }
-.form_page div{
-  padding: 0;
-}
-
-
 .contact  .part2{
 max-width: 636px;
 }
