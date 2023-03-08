@@ -899,6 +899,9 @@ margin-bottom: 8px;
   color: #404040;
   font-family: "DM Sans3";
 }
+.courseDetails .cart .part2 ul li a{
+  text-decoration: underline;
+}
 .courseDetails .curriculum{
 margin-top: 74px;
 }
