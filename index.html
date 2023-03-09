@@ -21,6 +21,7 @@
     integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N"
     crossorigin="anonymous"
   />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.7/themes/odometer-theme-minimal.min.css" integrity="sha512-Jeqp8CoPCvf9tf/uWokfCTsFcv5BIhfTYaTTJA0NKn6B88zDSWe5d/9HTmZX63FGpGGQdB8Chg2khB96+wn4Tw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./css/owl.carousel.min.css" />
   <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
   <link rel="stylesheet" href="./css/all.min.css" />
@@ -89,27 +90,27 @@
         <section class="numbers container ">
             <div class="item">
                 <img src="./images/users-group.webp" alt="users-group">
-                <h3>1523</h3>
+                <h3 class="odometer" data-from="0" data-to="1523" id="odometer">0</h3>
                 <p>Student Enrolled</p>
             </div>
             <div class="item">
                 <img src="./images/presentation.webp" alt="presentation">
-                <h3>253</h3>
+                <h3 class="odometer" data-from="0" data-to="253" id="odometer">0</h3>
                 <p>Classes Completed</p>
             </div>
             <div class="item">
                 <img src="./images/teacher.webp" alt="teacher">
-                <h3>50</h3>
+                <h3 class="odometer" data-from="0" data-to="50" id="odometer">0</h3>
                 <p>Qualified Trainer</p>
             </div>
             <div class="item">
                 <img src="./images/time.webp" alt="time">
-                <h3>652 K</h3>
+                <h3 class="odometer" data-from="0" data-to="652000" id="odometer">0</h3>
                 <p>Training Hours</p>
             </div>
         </section>
       </header>
-
+    
 
 <section class="ourPrograms ">
     <div class="head_title">
@@ -321,7 +322,7 @@
       </div>
     </div>
     <div class="copy">
-      <p>©All rights reserved.</p>
+      <p>©All rights reserved. 2019-2023 <a href="">Made by AQuadic</a></p>
       <div class="links_social">
         <a href="https://www.facebook.com/MegamindsEgypt" target="_blank">
           <img src="./images/facebook.webp" alt="facebook" />
@@ -344,6 +345,7 @@
     <script src="js/jquery-3.6.1.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="./js/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.7/odometer.min.js"></script>
    <script>
     $('.owl-carousel').owlCarousel({
     loop:true,
@@ -367,5 +369,13 @@
     }
 })
    </script>
+<script>
+const numbers = document.querySelectorAll(".odometer")
+ numbers.forEach((number,i)=>{
+  const value = number.dataset.to;
+setInterval(()=>odometer[i].innerHTML = value,100)
+ })
+</script>
+
 </body>
 </html>

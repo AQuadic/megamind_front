@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -97,15 +97,104 @@
             <label for="inputParentName" class="form-label">Parent Name <span>*</span></label>
             <input type="text" class="form-control" id="inputParentName" placeholder="First Name">
           </div>
-        <div class="col-12">
+          <div class="col-md-4 endDiv">
+            <label for="inputState" class="form-label">Date of Birth <span>*</span></label>
+            <select id="inputState" class="form-select ">
+              <option selected>Day</option>
+              <option>1</option>
+              <option>2</option>
+            </select>
+          </div>
+          <div class="col-md-4 endDiv">
+         
+            <select id="inputState" class="form-select">
+              <option selected>Month</option>
+              <option>sep</option>
+              <option>May</option>
+            </select>
+          </div>
+          <div class="col-md-4 endDiv">
+           
+            <select id="inputState" class="form-select">
+              <option selected>Year</option>
+              <option>2000</option>
+              <option>2001</option>
+            </select>
+          </div>
+          <div class="col-md-12">
+            <label for="inputPhone " class="form-label">Phone Number <span>*</span></label>
+            <div class="tel">
+              <input type="tel" class="form-control" id="inputPhoneNumber" placeholder="Phone Number">
+             </div>
+          </div>
+        <div class="col-md-12">
           <label for="inputEmail" class="form-label">Email Adress <span>*</span></label>
           <input type="email" class="form-control" id="inputEmail" placeholder="Email">
         </div>
-        <div class="col-12">
-          <label for="inputPhone " class="form-label">Phone Number <span>*</span></label>
-          <input type="tel" class="form-control" id="inputPhone " placeholder="Phone Number">
-        </div>
-        
+       
+         
+          <div class="col-md-12">
+            <label for="inputLocation" class="form-label">Location of The course  <span>*</span></label>
+            <div class="form-check">
+              <input class="form-check-input location" type="checkbox" id="gridCheck1" checked>
+              <label class="form-check-label" for="gridCheck1">
+                Online
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input location" type="checkbox" id="gridCheck1">
+              <label class="form-check-label" for="gridCheck1">
+                Offline “On Academy”
+              </label>
+            </div>
+           
+          </div>
+          <div class="col-md-12">
+            <label for="inputLocation" class="form-label">Appropriate dates for attendance   <span>*</span> <p> "Please choose more than one date" </p></label>
+            <div class="form-check">
+              <input class="form-check-input dates" type="checkbox" id="gridCheck1"  checked>
+              <label class="form-check-label" for="gridCheck1">
+                Saturday
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input dates" type="checkbox" id="gridCheck1">
+              <label class="form-check-label" for="gridCheck1">
+                Sunday
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input dates" type="checkbox" id="gridCheck1">
+              <label class="form-check-label" for="gridCheck1">
+                Monday
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input dates" type="checkbox" id="gridCheck1">
+              <label class="form-check-label" for="gridCheck1">
+                Tuesday
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input dates" type="checkbox" id="gridCheck1">
+              <label class="form-check-label" for="gridCheck1">
+                Wednesday
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input dates" type="checkbox" id="gridCheck1">
+              <label class="form-check-label" for="gridCheck1">
+                Thursday
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input dates" type="checkbox" id="gridCheck1">
+              <label class="form-check-label" for="gridCheck1">
+                Friday
+              </label>
+            </div>
+          </div>
+          
        <input type="submit" value="Book" class="btn_page"> 
       </form>
    </div>
@@ -177,6 +266,13 @@
     <script src="js/jquery-3.6.1.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="./js/owl.carousel.min.js"></script>
- 
+    <script>
+      $('.dates').on('change', function() {
+       $('.dates').not(this).prop('checked', false);
+    });
+    $('.location').on('change', function() {
+       $('.location').not(this).prop('checked', false);
+    });
+     </script>
 </body>
 </html>
