@@ -1615,3 +1615,324 @@ footer .copy .links_social img{
 }
 /*==================================start store==============================*/
 /*==================================end store==============================*/
+.hide{
+  display: none;
+}
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.counter button {
+  width: 38px;
+  height: 32px;
+  border-radius: 5px;
+  font-size: 24px;
+  line-height: 31px;
+  display: grid;
+  place-content: center;
+  border: none;
+}
+.counter .dec {
+  border: 1px solid #c9c9c9;
+  background-color: transparent;
+}
+.counter .inc {
+  background: #ea4c1a;
+  color: var(--white_color);
+}
+.counter .amount {
+  font-size: 20px;
+  line-height: 26px;
+}
+/*============================menu==========================*/
+ .store .items {
+  display: flex;
+  gap: 60px 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.items {
+}
+.items .item {
+ 
+  
+  margin: auto;
+}
+html[dir="rtl"] .items .item {
+  direction: rtl;
+}
+.items .item .img_store {
+  max-height: 150px;
+  width: auto;
+  cursor: pointer;
+  max-width: 100%;
+  margin: auto;
+  height: 100%;
+  min-height: 100px;
+}
+.items .item .name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+.items .item .name h2 {
+  font-size: 20px;
+  line-height: 26px;
+  margin: 0;
+}
+
+.items .item h3 {
+  font-size: 16px;
+  line-height: 21px;
+  color: #757575;
+  margin-bottom: 4px;
+}
+.items .item .price_customize {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+.items .item .price_customize .sall {
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration-line: line-through;
+  color: #989898;
+}
+.items .item .price_customize .price {
+  font-size: 20px;
+line-height: 26px;
+font-family: "DM Sans";
+}
+
+.items .item .add_to {
+  width: 212px;
+  height: 38px;
+  gap: 8px;
+  font-family: "DM Sans";
+  font-size: 16px;
+  max-width: 100%;
+}
+@media (max-width: 768px){
+  .store .items .item {
+    max-width: 200px;
+   margin: 0;
+      align-self: flex-end;
+  
+}
+.store .items {
+ 
+  gap: 30px 8px;
+
+}
+}
+@media (max-width: 446px){
+  .store .items .item {
+    max-width: 168px;
+}
+.items .item .name h2 {
+  font-size: 16px;
+  
+}
+.items .item h3 {
+  font-size: 14px;
+  
+}
+.items .item .price_customize .price {
+  font-size: 16px;
+ 
+}
+.items .item .price_customize .sall {
+  font-size: 12px;
+  
+}
+.items .item .add_to {
+  width: 200px;
+  height: 32px;
+ 
+ 
+  font-size: 14px;
+
+}
+}
+/*=========================================================== carts=====================================*/
+.carts{
+  margin-bottom: 150px;
+  }
+  
+  .carts h2{
+    font-size: 20px;
+  line-height: 26px;
+  margin-bottom: 16px;
+  }
+  .carts h2 span{
+    margin: 0px 12px;
+  }
+  
+  .carts .items_order{
+    display: flex;
+    gap: 20px;
+  }
+  .carts .items {
+    flex: 1;
+  }
+  .carts .items .item{
+    background: #FFFFFF;
+  border-radius: 20px;
+  padding: 20px 14px 10px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  }
+  .carts .items .item .itemMeal {
+    height: 102px;
+    width: auto;
+}
+  .carts .items .item .parts{
+    flex: 1;
+  }
+  .carts .items .item .parts .part1 {
+    margin-bottom: 8px;
+  }
+  .carts .items .item .parts .part1 .info{
+    display: flex;
+    justify-content: space-between;
+  }
+  .carts .items .item .parts .part1 .info h3{
+    font-size: 20px;
+  line-height: 26px;
+  margin-bottom: 4px;
+  }
+  .carts .items .item .parts .part1 .info img{
+    margin-top: 6px;
+  }
+  .carts .items .item .parts .part1 h4{
+    font-size: 16px;
+  line-height: 21px;
+  color: #757575;
+  margin-bottom: 4px;
+  
+  }
+  .carts .items .item .parts .part1 .customize{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .carts .items .item .parts .part1 .customize p{ 
+    font-size: 16px;
+  line-height: 21px;
+  color: #FF754A;
+  
+  }
+  html[dir=rtl] .carts .items .item .parts .part1 .customize img{
+    transform: rotate(180deg);
+  }
+  .carts .items .item .parts .part2{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+  }
+  .carts .items .item .parts .part2 .price{
+     
+  }
+  .carts .items .item .parts .part2 .price span{
+    font-size: 16px;
+  line-height: 21px; 
+  }
+  .carts .items .item .parts .part2 .counter{
+     gap: 18px;
+  }
+  .carts .items .item .parts .part2 .counter p{
+    font-size: 16px;
+  }
+  .carts .items .item .parts .part2 .counter button{
+     width: 28px;
+     height: 28px;
+  display: grid;
+  place-content: center;
+    }
+  
+  .orderSummary{
+    background: #FFFFFF;
+    border: 1px solid #E6E6E6;
+    border-radius: 10px;
+    min-width: 366px;
+    height: 100%;
+    padding: 20px 16px;
+  }
+  .orderSummary .head_order{
+   
+  font-size: 16px;
+  line-height: 21px;
+   text-align: center;
+  }
+ 
+  .carts .orderSummary ul{
+    padding:  0px ;
+  }
+  .carts .orderSummary ul li{
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .carts .orderSummary ul li:first-of-type , .orderSummary .priceOrder li:first-of-type{
+    padding-bottom: 12px;
+    border-bottom: 1px solid #F4F4F4;
+  }
+  .carts .orderSummary ul li h4, .orderSummary .priceOrder li h4{
+    font-size: 14px;
+    margin: 0;
+    font-family: "DM Sans3";
+  }
+  .carts .orderSummary ul li h5, .orderSummary .priceOrder li h5{
+    font-size: 14px;
+    margin: 0;
+  }
+  .carts .orderSummary a , .orderSummary  a{
+    height: 36px;
+    width: 92%;
+    margin: auto;
+    margin-top: 20px;
+ 
+    font-size: 14px;
+  }
+  .green{
+    color: #157E0C !important;
+  }
+  @media(max-width:992px){
+    .carts .items_order {
+     flex-direction: column;
+  }
+   .orderSummary  {
+  min-width: 100%;
+  }
+  }
+  @media(max-width:400px){
+   .carts .items .item .parts .part1 .info h3 {
+      font-size: 18px;
+      
+  }
+  .carts .items .item .parts .part1 h4 ,.carts .items .item .parts .part1 .customize p ,.carts .items .item .parts .part2 .price span {
+      font-size: 14px;
+     
+  }
+  .carts .items .item .parts .part2 .counter{
+   
+      gap: 14px;
+  }
+  .carts .items .item .itemMeal {
+      height: 60px;
+    
+  }
+  .carts h2 {
+    font-size: 16px;
+   
+  }
+  }
+  
+  /*===========================================================end carts=====================================*/
