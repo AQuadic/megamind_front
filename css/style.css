@@ -651,7 +651,20 @@ header .topHeader .btn_header {
 .courses .btn_page2 {
   margin: 38px auto 0px;
 }
-
+.courses .itemsEmpty{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ margin: 74px auto 150px;
+ flex-direction: column;
+}
+.courses .itemsEmpty img{
+max-width: 70%;
+ margin: auto;
+ display: block;
+}
+.courses .itemsEmpty h2{font-size: 24px; text-align: center;}
+.courses .itemsEmpty p{font-size: 24px; text-align: center;}
 @media (max-width: 768px) {
   .courses .items .item img {
     width: auto;
