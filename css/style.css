@@ -1052,6 +1052,10 @@ max-width: 70%;
 .bookingForm .content form .btn_page {
   margin: 44px auto 10px;
 }
+.bookingForm .form-check .form-check-input{
+  width: 18px;
+  height: 18px;
+}
 html[dir="ltr"] .form-check .form-check-input {
   float: left;
 }
@@ -1252,7 +1256,7 @@ html[dir="rtl"] .career .form_Career::before {
 }
 .career .form_Career .part1 input {
   width: 18px;
-  border-radius: 2px;
+ 
   height: 18px;
   float: left;
 }
