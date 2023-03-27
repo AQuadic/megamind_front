@@ -231,7 +231,11 @@
                 <span class="plus">+</span>
                 <label>Upload Your CV <span>*</span></label>
               </button>
-              <p class="filename"></p>
+            
+              <div class="yourCV" id="yourCV">
+                <p class="filename" id="filename"></p>
+                <button><img src="./images/xCV.svg" id="delet" alt="delet"></button>
+              </div>
             </div>
             <div class="col-12">
               <label for="inputComment " class="form-label">Comment</label>
@@ -319,6 +323,17 @@
     <script src="./js/owl.carousel.min.js"></script>
     <script>
     
+      const delet = document.getElementById("delet");
+      const filename = document.getElementById("filename");
+      const fileparent = document.getElementById("yourCV");
+      
+      delet.addEventListener("click",function(e){
+        e.preventDefault()
+        this.parentNode.parentElement.style.display="none"; 
+      })
+      if(filename.textContent.length <= 0){
+fileparent.style.display="none";
+      }
       
 	//now will select file name and print in div tag.
 	//for this you need to pass parameter
@@ -328,7 +343,13 @@ $(function()
 	{
 		$("#fileupload").change(function(event) {
 			var x = event.target.files[0].name
-			$(".filename").text(x)
+			$(".filename").text(x);
+      if(x.length <= 1){
+fileparent.style.display="none";
+      }
+      if(x.length > 1){
+      fileparent.style.display="flex";
+    }
 		});
 	})
 
