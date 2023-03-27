@@ -1286,7 +1286,7 @@ html[dir="rtl"] .career .form_Career .part1 input {
   gap: 20px;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 44px;
+  
 }
 .career .form_Career .upload input {
   cursor: pointer;
@@ -1336,6 +1336,9 @@ html[dir="rtl"] .career .form_Career .part1 input {
 border-radius: 10px;
 gap: 16px;
 }
+.yourCV p {
+  font-size: 12px;
+}
 @media (max-width: 992px) {
   .career .form_Career {
     flex-wrap: wrap;
@@ -1351,6 +1354,12 @@ gap: 16px;
     font-size: 18px;
 
     margin-bottom: 46px;
+  }
+}
+@media (max-width: 768px) {
+  .career .form_Career .upload {
+    
+    margin-bottom: 44px;
   }
 }
 /*==================================end career==============================*/
