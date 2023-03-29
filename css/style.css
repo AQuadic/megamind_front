@@ -2130,6 +2130,10 @@ footer .head p {
   line-height: 25px;
   max-width: 386px;
 }
+footer .head img{
+  width: 326px;
+  max-width: 80%;
+}
 footer .part .contact2 p {
   font-size: 16px;
   line-height: 21px;
