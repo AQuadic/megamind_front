@@ -127,7 +127,7 @@
       </div>
     </nav>
 
-    <header class="mb100">
+    <header >
       <div class="imgHeader">
         <img src="./images/headerimg3.webp" class="mainImg" alt="headerimg" />
         <div class="topHeader">
@@ -135,7 +135,9 @@
         </div>
       </div>
     </header>
-    <section class="about container mb100">
+    <section class="about  mb100">
+      <img src="./images/rocket.webp" class="rocketabout" alt="rocket">
+     <div class="container aboutContent">
       <div class="part">
         <div class="head_title">
           <span>[</span>
@@ -154,6 +156,7 @@
         </p>
       </div>
       <img src="./images/aboutimg.webp" class="aboutimg" alt="aboutimg" />
+     </div>
     </section>
 
     <section class="ourVission mb100">
@@ -180,25 +183,15 @@
     <section class="gallery container mb100">
       <div class="head_title">
         <span>[</span>
-        <h2>Gallery</h2>
+        <h2>Our Achievement</h2>
         <span>]</span>
       </div>
-      <div class="imgGallery">
-        <div class="owl-carousel owl-theme">
-          <div class="item">
-            <img src="./images/gallery1.webp" alt="Gallery" />
-            <p>Photo Caption</p>
-          </div>
-          <div class="item">
-            <img src="./images/gallery2.webp" alt="Gallery" />
-            <p>Photo Caption</p>
-          </div>
-          <div class="item">
-            <img src="./images/gallery1.webp" alt="Gallery" />
-            <p>Photo Caption</p>
-          </div>
-        </div>
+     <div class="parts">
+      <div class="pert1">
+        <img src="./images/arrowTarget.webp" alt="arrowTarget" class="arrowTarget">
       </div>
+      <div class="pert1"></div>
+     </div>
     </section>
 
     <footer>
@@ -266,32 +259,5 @@
     <script src="js/popper.min.js"></script>
     <script src="js/jquery-3.6.1.min.js"></script>
     <script src="js/bootstrap.js"></script>
-    <script src="./js/owl.carousel.min.js"></script>
-    <script>
-      $(".owl-carousel").owlCarousel({
-        navText: [
-          '  <img src="./images/prev.svg" alt=""/>',
-          '   <img src="./images/next.svg" alt=""/> ',
-        ],
-        loop: false,
-        margin: 10,
-        nav: true,
-        responsiveClass: true,
-
-        responsive: {
-          0: {
-            items: 1,
-            nav: false,
-          },
-          660: {
-            items: 1,
-            nav: true,
-          },
-          1200: {
-            items: 2,
-          },
-        },
-      });
-    </script>
   </body>
 </html>

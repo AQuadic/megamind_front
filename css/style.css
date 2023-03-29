@@ -432,6 +432,10 @@ header .topHeader {
   line-height: 83px;
   text-align: center;
   margin-bottom: 28px;
+  font-family: "DK Cool";
+}
+.homeheader{
+  font-family: "DM Sans";
 }
 .titleHeader span {
   color: var(--main_color);
@@ -713,26 +717,38 @@ font-family: "PF1";
 
 /*==================================start courses==============================*/
 .courses {
+  padding-bottom: 100px;
+  padding-top: 50px;
+  background-image: url('../images/backPage.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .courses .head_title {
   margin-bottom: 38px;
 }
 .courses .head_title h2 {
   max-width: 192px;
+  min-width: fit-content;
 }
 .courses .items {
   display: flex;
   align-items: center;
-  gap: 60px 20px;
+  gap: 50px 30px;
   flex-wrap: wrap;
   justify-content: center;
 }
 .courses .items .item {
-  width: 270px;
+  max-width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  
+  min-width: 377px;
+  max-width: 500px;
+  flex: 1;
 }
 .courses .items .item img {
-  width: 270px;
-  height: 152px;
+  width: 100%;
+  height: 236px;
 }
 .courses .items .item h3 {
   font-size: 16px;
@@ -781,11 +797,45 @@ max-width: 70%;
 }
 .courses .itemsEmpty h2{font-size: 24px; text-align: center;}
 .courses .itemsEmpty p{font-size: 24px; text-align: center;}
+.courses .part .headCoursers {
+  display: flex;
+  align-items: center;
+  margin-bottom: 22px;
+  gap: 20px;
+}
+.courses .items .item .itemAbout {
+  border: 1px solid #C6C6C6;
+  border-radius: 0px 0px 20px 20px;
+  border-top: none;
+  width: 100%;
+padding: 16px 12px 18px 12px;
+}
+.courses .items .item .itemAbout a{
+  margin:8px  0 0;
+  max-width: 192px;
+
+}
+.courses .part .headCoursers h3{
+  font-size: 32px;
+  line-height: 25px;
+  color: #626262;
+  font-family: "DK Cool";
+  margin: 0;
+  min-width: fit-content;
+}
+.courses .part .headCoursers span{
+  display: block;
+  width: 100%;
+  height: 4px;
+  
+  background-color: rgba(241, 112, 68, 0.2);
+  flex: 1;
+} 
 @media (max-width: 768px) {
   .courses .items .item img {
-    width: auto;
-    height: 110px;
-  }
+    width: 100%;
+    height: 200px;
+}
   .courses .items .item {
     width: fit-content;
   }
@@ -802,20 +852,15 @@ max-width: 70%;
 }
 @media (max-width: 432px) {
   .courses .items .item {
-    width: 47%;
+    min-width: 100%;
   }
   .courses .items .item img {
     width: 100%;
-    height: 100px;
-  }
+    height: 180px;
+}
 }
 @media (max-width: 370px) {
-  .courses .items .item img {
-    width: 80%;
-    height: 100%;
-    display: block;
-    margin: auto;
-  }
+ 
   .courses .items .item {
     width: 100%;
   }
@@ -938,7 +983,6 @@ max-width: 70%;
   align-items: center;
   justify-content: center;
   gap: 20px 40px;
-  margin-top: 50px;
   margin-bottom: 28px;
   flex-wrap: wrap;
 }
@@ -994,6 +1038,10 @@ max-width: 70%;
 
 /*==================================start courseDetails==============================*/
 .courseDetails {
+  background-image: url('../images/backPage.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom:100px;
 }
 .courseDetails .cart {
   display: flex;
@@ -1002,7 +1050,7 @@ max-width: 70%;
   gap: 20px;
 }
 
-.courseDetails .cart img {
+.courseDetails .cart .imgcart {
   height: 370px;
   width: auto;
   max-width: 100%;
@@ -1018,8 +1066,8 @@ max-width: 70%;
   line-height: 21px;
   color: var(--scound_color);
 }
-.courseDetails .cart .part2 .btn_page2 {
-  margin-top: 8px;
+.courseDetails .cart .part2 .btn_page {
+  max-width: 192px;
 }
 .courseDetails .cart .part2 ul {
   margin-top: 30px;
@@ -1043,6 +1091,28 @@ max-width: 70%;
 }
 .courseDetails .cart .part2 ul li a {
   text-decoration: underline;
+}
+.courseDetails .cart .links{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+margin-top: 8px;
+}
+.courseDetails .cart .links .udemy{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  background: #FFFFFF;
+  border: 2px solid #A435F0;
+  border-radius: 10px;
+  width: 192px;
+  height: 44px;
+  font-size: 16px;
+line-height: 21px;
+font-family: "DM Sans";
+
 }
 .courseDetails .curriculum {
   margin-top: 74px;
@@ -1070,12 +1140,12 @@ max-width: 70%;
   line-height: 25px;
 }
 @media (max-width: 1200px) {
-  .courseDetails .cart img {
+  .courseDetails .cart .imgcart {
     height: 240px;
   }
 }
 @media (max-width: 992px) {
-  .courseDetails .cart img {
+  .courseDetails .cart .imgcart {
     height: 180px;
   }
 }
@@ -1090,28 +1160,108 @@ max-width: 70%;
 /*==================================start bookingForm==============================*/
 .bookingForm {
   margin-top: 90px;
+  position: relative;
+  overflow: hidden;
+}
+/* .bookingForm .box{
+  position: absolute;
+  height: cala(100% - 20px);
+  width: cala(100% - 20px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+} */
+
+
+
+
+
+.bookingForm .rocketForm{
+  position: absolute;
+  top: 20px;
+  left: 0;
+  max-width: 60%
+}
+html[dir=rtl] .bookingForm .rocketForm{
+  left: auto;
+  right: 0;
+ 
+  transform: rotateY(180deg);
+}
+.bookingForm .maskgroup{
+  position: absolute;
+bottom: 20px;
+right: 0;
+max-width: 60%
+}
+html[dir=rtl] .bookingForm .maskgroup{
+  right: auto;
+  left: 0;
+  transform: rotateY(180deg);
 }
 .bookingForm h2 {
   font-size: 32px;
   line-height: 42px;
   text-align: center;
+  font-family: 'DK Cool';
 }
 .bookingForm h2 span {
   color: var(--main_color);
 }
 .bookingForm .content {
-  border: 1px solid #d2d2d2;
-  border-radius: 10px;
+ position: relative;
   padding: 32px 16px;
-  margin: 28px auto 0px;
+  margin: 28px auto 106px;
   max-width: 682px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.12);
+border-radius: 10px;
+background-color: white;
 }
+.bookingForm .content .box{
+  position: absolute;
+overflow: hidden;
+  width: calc(100% + 12px );
+  height:  calc(100% + 12px );
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% ,-50%);
+background-color: transparent;
+z-index: -1;
+border-radius: 10px;
+
+}
+.bookingForm .content .box .pro{
+  width: 50%;
+  height: 200%;
+  position: relative;
+  background: linear-gradient(#00ccff, #d400d4);
+   animation: animate 10s infinite linear; 
+}
+
+@keyframes animate {
+  0%{
+    transform:  rotate(-360deg);
+   
+}
+ 
+
+}
+
 .bookingForm .content h3 {
   font-size: 20px;
   line-height: 26px;
   color: #515151;
-  margin-bottom: 60px;
+  margin: 0px auto 30px;
   text-align: center;
+  max-width: 550px;
+}
+.bookingForm .content h3 span{
+  font-family: 'DK Cool';
+color: var(--scound_color);
+
+}
+.bookingForm .content h3 span.mainColor{
+color: var(--main_color) !important;
 }
 .bookingForm .content form {
   margin: auto;
@@ -1197,11 +1347,28 @@ html[dir="rtl"] .form-check .form-check-input {
 /*==================================end bookingForm==============================*/
 
 /*==================================start about==============================*/
-.about {
+.about{
+position: relative;
+  overflow: hidden;
+  padding-top: 100px;
+}
+.aboutContent {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 50px;
+  
+}
+.about .rocketabout{
+  position: absolute;
+left: 0;
+top: 20px;
+max-width: 70%;
+}
+html[dir=rtl] .about .rocketabout{
+right: 0;
+left: auto;
+transform: rotateY(180deg);
 }
 .about .part {
   max-width: 512px;
@@ -1264,52 +1431,16 @@ html[dir="rtl"] .form-check .form-check-input {
 
 .gallery {
 }
-.gallery .imgGallery {
-  margin-top: 30px;
+.gallery .parts{
+display: flex;
+align-items: center;
+justify-content: space-between;
 }
-.gallery .imgGallery .owl-nav {
+.gallery .parts .part1{
+  
 }
-.owl-theme .owl-nav [class*="owl-"]:hover {
-  background: transparent;
-}
-.gallery .imgGallery .owl-nav button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.gallery .imgGallery .owl-nav .owl-prev {
-  left: -50px;
-}
-.gallery .imgGallery .owl-nav .owl-next {
-  right: -50px;
-}
-.owl-carousel .owl-stage-outer {
-  direction: initial;
-}
-.gallery .imgGallery .item {
-  max-width: 560px;
-  max-height: 490px;
-  border-radius: 10px;
-  margin: auto;
-  height: 100%;
-}
-.gallery .imgGallery .item p {
-  font-size: 16px;
-  line-height: 21px;
-  text-align: center;
-  margin-top: 12px;
-}
-.gallery .imgGallery .item img {
-  width: 100%;
-  height: 100%;
-}
-.gallery .imgGallery .owl-dot span {
-  width: 12px;
-  height: 12px;
-  background: #e6e6e6;
-}
-.gallery .imgGallery .owl-dot.active span {
-  background: #ff7443;
+.gallery .parts .part2{
+  
 }
 
 @media (max-width: 992px) {
