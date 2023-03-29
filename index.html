@@ -109,11 +109,11 @@
         </div>
       </nav>
       <header class="mb">
-    <div class="imgHeader">    
+    <div class="imgHeader ">    
         <img src="./images/headerimg1.webp" class="mainImg" alt="headerimg">
         <div class="topHeader">
             <h2 class="titleHeader">
-                Better <span>Future</span>
+                Better <span class="text sec-text">hamed</span>
             </h2>
             <h3>For Your Kids</h3>
             <a href="courses.html" class="btn_header"> Get Free Session</a>
@@ -567,7 +567,27 @@
 </div> -->
 
 
+<script>
+  const text = document.querySelector(".sec-text");
 
+  const textLoad = () => {
+      setTimeout(() => {
+          text.textContent = "Future";
+      }, 0);
+      setTimeout(() => {
+          text.textContent = "Knowledge";
+      }, 2000);
+      setTimeout(() => {
+          text.textContent = "Career";
+      }, 4000); //1s = 1000 milliseconds
+      setTimeout(() => {
+          text.textContent = "Live";
+      }, 6000); //1s = 1000 milliseconds
+  }
+
+  textLoad();
+  setInterval(textLoad, 8000);
+</script>    
 
 
 
