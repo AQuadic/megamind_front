@@ -1180,7 +1180,8 @@ font-family: "DM Sans";
   position: absolute;
   top: 20px;
   left: 0;
-  max-width: 60%
+  max-width: 60%;
+  z-index: 5;
 }
 html[dir=rtl] .bookingForm .rocketForm{
   left: auto;
@@ -1192,7 +1193,8 @@ html[dir=rtl] .bookingForm .rocketForm{
   position: absolute;
 bottom: 20px;
 right: 0;
-max-width: 60%
+max-width: 60%;
+z-index: 5;
 }
 html[dir=rtl] .bookingForm .maskgroup{
   right: auto;
@@ -1230,23 +1232,40 @@ z-index: -1;
 border-radius: 10px;
 
 }
-.bookingForm .content .box .pro{
-  width: 50%;
-  height: 200%;
-  position: relative;
-  background: linear-gradient(#00ccff, #d400d4);
-   animation: animate 10s infinite linear; 
+.bookingForm .content .box .pro {
+    width: 100%;
+    height: 100%;
+    
+}
+.bookingForm .content .box .pro::before {
+   width: 260px;
+    height: 260px;
+    top: 0;
+    right: 0;
+    position: absolute;
+    content: "";
+    background: var(--main_color);
+
+}
+.bookingForm .content .box .pro::after {
+   width: 260px;
+    height: 260px;
+    bottom:  0%;
+    left: 0;
+    position: absolute;
+    content: "";
+    background: var(--scound_color);
+/* animation: animation1 5s alternate infinite; */
 }
 
-@keyframes animate {
+/* @keyframes animation1 {
   0%{
-    transform:  rotate(-360deg);
-   
-}
- 
-
-}
-
+ bottom:  0%;
+  }
+   100%{
+ bottom: calc(100% - 6px);
+  }
+} */
 .bookingForm .content h3 {
   font-size: 20px;
   line-height: 26px;
@@ -1336,7 +1355,7 @@ html[dir="rtl"] .form-check .form-check-input {
     font-size: 26px;
   }
   .bookingForm .content {
-    margin: 18px auto 0px;
+    margin: 18px auto 80px;
   }
   .bookingForm .content h3 {
     font-size: 18px;
