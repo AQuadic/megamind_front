@@ -132,7 +132,15 @@
     <section class="productScreen container">
       <div class="info">
         <div class="parts">
-          <div class="part1"></div>
+          <div class="part1 bP">
+            <div class="allimg">
+              <img src="./images/screen1.webp"   class="active def_img"   alt="productScreen">
+              <img src="./images/screen2.webp" class=" def_img"  alt="productScreen">
+              <img src="./images/screen3.webp" class=" def_img"  alt="productScreen">
+            </div>
+            <img src="./images/screen1.webp" class="showimg"  id="img_show" alt="productScreen">
+           
+          </div>
           <div class="part2 samePart bP">
             <h3>Description</h3>
             <ul>
@@ -244,7 +252,7 @@
           </div>
           </div>
         <div class="item">
-          <img src="./images/robot2.webp" class="img_store" alt="meal" />
+          <img src="./images/screen1.webp" class="img_store" alt="meal" />
           <div class="name">
             <h2 class="f-m">Kit with Camera</h2>
           </div>
@@ -382,6 +390,25 @@
           val[index].innerText = +val[index].innerText + 1;
         });
       });
+
+
+
+
+      const img_show = document.getElementById("img_show")
+      const def_img = document.querySelectorAll(".def_img")
+       const ahmed = function  (){
+      img_show.src =this.src;
+      document.querySelectorAll(".def_img").forEach((el)=>{el.classList.remove("active")})
+      this.classList.add("active");
+      
+    
+      
+   
+    }
+    for(i=0 ; i<=def_img.length ; i++){
+      def_img[i].addEventListener("click",ahmed)
+    }
     </script>
+
   </body>
 </html>
