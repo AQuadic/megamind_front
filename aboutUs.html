@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="./css/owl.carousel.min.css" />
     <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
     <link rel="stylesheet" href="./css/all.min.css" />
+  <link rel="stylesheet" href="./css/animate.css">
+
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -135,7 +137,7 @@
         </div>
       </div>
     </header>
-    <section class="about  mb100">
+    <section class="about  mb100 wow bounceIn" data-wow-duration="1s" data-wow-delay="1s">
       <img src="./images/rocket.webp" class="rocketabout" alt="rocket">
      <div class="container aboutContent">
       <div class="part">
@@ -161,7 +163,7 @@
 
     <section class="ourVission mb100">
       <div class="content container">
-        <div class="part">
+        <div class="part wow bounceInLeft" data-wow-duration="1s" >
           <img src="./images/find1.webp" alt="find1" />
           <h2>Our Vission</h2>
           <p>
@@ -169,7 +171,7 @@
             based education.
           </p>
         </div>
-        <div class="part">
+        <div class="part wow bounceInRight" data-wow-duration="1s" >
           <img src="./images/target.webp" alt="target" />
           <h2>Our Mission</h2>
           <p>
@@ -188,12 +190,12 @@
         <span>]</span>
       </div>
      <div class="parts container">
-      <div class="part1">
+      <div class="part1 wow bounceIn" data-wow-duration="1s" >
         <img src="./images/arrowTarget.webp" alt="arrowTarget" class="arrowTarget">
       </div>
-      <div class="part2">
-        <div class="cricle">
-        <div class="item item1">
+      <div class="part2 "  >
+        <div class="cricle wow rotateInDownLeft" data-wow-duration="1s">
+        <div class="item item1 " >
           <span>
             
           </span>
@@ -202,7 +204,7 @@
             <h3><b>580</b> Enrolled Students</h3>
           </div>
         </div>
-        <div class="item item2">
+        <div class="item item2 " >
           <span>
             
           </span>
@@ -211,7 +213,7 @@
             <h3><b>580</b>Qualified Trainers</h3>
           </div>
         </div>
-        <div class="item item3">
+        <div class="item item3 " >
           <span>
             
           </span>
@@ -220,7 +222,7 @@
             <h3><b>250</b>  Training Hours</h3>
           </div>
         </div>
-        <div class="item item4">
+        <div class="item item4 " >
           <span>
             
           </span>
@@ -295,7 +297,10 @@
         </div>
       </div>
     </footer>
-
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
     <script src="js/popper.min.js"></script>
     <script src="js/jquery-3.6.1.min.js"></script>
     <script src="js/bootstrap.js"></script>

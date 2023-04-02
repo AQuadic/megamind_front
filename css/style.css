@@ -352,11 +352,27 @@ html::-webkit-scrollbar-track {
   right: auto;
   transform: translateX(-50%);
 }
+.navbar-toggler2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
+}
+.navbar-toggler2 .btn_page {
+  width: 90px;
+  height: 34px;
+  font-size: 14px;
+  border-radius: 20px;
+}
 @media (min-width: 992px) {
   .navbar-expand-lg {
     flex-wrap: nowrap;
     justify-content: space-between;
   }
+  .navbar-expand-lg .navbar-toggler2 {
+    display: none;
+}
 }
 @media (max-width: 1400px) {
   .navbar-brand img {
@@ -395,9 +411,18 @@ html::-webkit-scrollbar-track {
     width: 26px;
     height: 2px;
   }
-  .navbar-toggler {
+  .navbar-toggler2 {
     margin-top: 8px;
   }
+}
+@media (max-width: 430px) {
+  .navbar-brand img {
+    width: 180px;
+  }
+  .navbar-toggler2 {
+   
+    gap: 10px;
+}
 }
 /*==================================end navbar==============================*/
 /*==================================start header==============================*/
@@ -556,6 +581,26 @@ header .topHeader .links_social img{
     flex-wrap: wrap;
   }
 }
+@media (max-width: 768px) {
+  .numbers .item {
+   align-self: stretch;
+    width: 140px;
+    min-width: 140px;
+}
+.numbers .item h3 {
+  font-size: 26px;
+  line-height: 24px;
+}
+.numbers .item p {
+  font-size: 16px;
+  line-height: 24px;
+}
+.numbers .item img {
+  width: 64px;
+  height: 64px;
+  
+}
+}
 /*==================================end numbers==============================*/
 /*==================================start ourPrograms==============================*/
 
@@ -675,7 +720,7 @@ font-family: "PF1";
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: -1;
-    opacity: 0.2;
+    opacity: 0.1;
     max-width: 100%;
     max-height: 100%;
   }
@@ -700,6 +745,7 @@ font-family: "PF1";
   left: 0;
   z-index: -5;
   max-width: 80%;
+  opacity: 0.6;
   }
 }
 
@@ -755,6 +801,7 @@ font-family: "PF1";
 .courses .items .item img {
   width: 100%;
   height: 236px;
+  object-fit: cover;
 }
 .courses .items .item h3 {
   font-size: 16px;
@@ -2262,6 +2309,7 @@ background: rgba(102, 133, 201, 0.1);
   padding: 0 60px;
   margin-top: 36px;
   overflow: hidden;
+  direction: ltr;
 }
 
 .wrap:after {
@@ -2317,6 +2365,7 @@ background: rgba(102, 133, 201, 0.1);
   height: 400px !important;
   transition: transform .4s;
   position: relative; 
+  float: left !important;
 }
 
 .slick-slide:after {
@@ -2520,6 +2569,10 @@ transform: translateY(-50%) rotateY(180deg);
   top: 50%;
   transform: translateY(-50%);
   left: 0;
+}
+html[dir=rtl] .globally .parts .part1{
+  left: auto;
+  right: 0;
 }
 .globally .parts .part1 h3{
   font-size: 24px;
