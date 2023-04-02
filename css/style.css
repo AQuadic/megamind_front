@@ -2528,7 +2528,10 @@ transform: translateY(-50%) rotateY(180deg);
 .tech-slideshow > div {
   height: 100px;
   width: 2526px;
-  background: url('../images/usedgroup.webp');
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70PX;
   position: absolute;
   top: 0;
   left: 0;
