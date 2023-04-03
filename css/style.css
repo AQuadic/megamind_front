@@ -2516,44 +2516,41 @@ left: auto;
 right:103%; 
 transform: translateY(-50%) rotateY(180deg);
 }
-  .tech-slideshow {
-  height: 100px;
-  max-width: 100%;
-  margin: 0 auto;
-  position: relative;
-  overflow: hidden;
-  transform: translate3d(0, 0, 0);
-}
-
-.tech-slideshow > div {
-  height: 100px;
-  width: 2526px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 70PX;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  transform: translate3d(0, 0, 0);
-}
-.tech-slideshow .mover-1 {
-  animation: moveSlideshow 35s linear infinite;
-}
-.tech-slideshow .mover-2 {
-  opacity: 0;
-  transition: opacity 0.5s ease-out;
-  background-position: 0 -200px;
-  animation: moveSlideshow 35s linear infinite;
-}
 
 
-@keyframes moveSlideshow {
-  100% { 
-    transform: translateX(-66.6666%);  
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
   }
 }
+.logos {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 35s slide infinite linear;
+}
+
+.logos-slide img {
+  height: 70px;
+  margin: 0 30px;
+}
+@media(max-width:600px){
+  .logos-slide img {
+    height: 48px;
+    margin: 0 16px;
+  }
+}
+
 /*==================================end used==============================*/
 
 
