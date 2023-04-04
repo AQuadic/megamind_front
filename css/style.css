@@ -728,6 +728,9 @@ font-family: "PF1";
     margin: 70px auto;
    
   }
+  .programs h4 ,.programs p{
+    color: black;
+}
 }
 
 @media (max-width: 768px) {
