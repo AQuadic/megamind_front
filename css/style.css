@@ -6,46 +6,9 @@
 }
 body {
 }
-@font-face {
-  font-family: "DM Sans";
-  src: url("../fonts/DMSans-Bold.ttf");
-  font-weight: 700;
-  font-style: normal;
-  color: var(--main-color);
-}
-@font-face {
-  font-family: "DM Sans2";
-  src: url("../fonts/DMSans-Medium.ttf");
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: "DM Sans3";
-  src: url("../fonts/DMSans-Regular.ttf");
-  font-weight: 200;
-  font-style: normal;
-}
-@font-face {
-  font-family: "DK Cool";
-  src: url("../fonts/DK-Cool-Crayon.ttf");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "PF1";
-  src: url("../fonts/PF-Kids-Pro-Grade-One.ttf");
-  
-}
-@font-face {
-  font-family: "PF3";
-  src: url("../fonts/PF-Kids-Pro-Grade-Three.ttf");
-  
-}
-@font-face {
-  font-family: "PF5";
-  src: url("../fonts/PF-Kids-Pro-Grade-Five.ttf");
-  
-}
+
+
+
 .f-b {
   font-family: "DM Sans";
 }
@@ -113,6 +76,9 @@ html::-webkit-scrollbar-track {
   font-size: 32px;
   line-height: 42px;
   font-family: 'DK Cool';
+}
+html[dir=rtl] .head_title h2  {
+  font-size: 64px;
 }
 .head_title span {
   font-size: 70px;
@@ -271,6 +237,9 @@ html::-webkit-scrollbar-track {
   color: black;
   font-family: "DK Cool";
 }
+html[dir=rtl] .navbar-nav .nav-link {
+  font-size: 24px;
+}
 .navbar-nav .nav-link.active {
   color: var(--main_color);
 }
@@ -288,6 +257,9 @@ html::-webkit-scrollbar-track {
   font-family: "DK Cool";
 
 }
+html[dir=rtl] .navbar .btn-lang p {
+  font-size: 24px;
+}
 .endnav {
   display: flex;
   align-items: center;
@@ -300,6 +272,10 @@ html::-webkit-scrollbar-track {
   font-size: 14px;
   font-family: "DK Cool";
 
+
+}
+html[dir=rtl] .endnav .btn_nav {
+  font-size: 20px;
 }
 .endnav h4 {
   font-size: 14px;
@@ -311,6 +287,9 @@ html::-webkit-scrollbar-track {
   margin: 0;
   font-family: "DK Cool";
 
+}
+html[dir=rtl] .endnav h4  {
+  font-size: 20px;
 }
 .endnav ul {
   min-width: 130px;
@@ -335,6 +314,9 @@ html::-webkit-scrollbar-track {
   color: #4e4e4e;
   font-family: "DK Cool";
 
+}
+html[dir=rtl] .endnav ul li p  {
+  font-size: 20px;
 }
 .endnav .dropdown-toggle::after {
   vertical-align: 0.255em;
@@ -465,6 +447,7 @@ header .topHeader {
   margin-bottom: 28px;
   font-family: "DK Cool";
 }
+
 .homeheader{
   font-family: "DM Sans";
 }
@@ -672,6 +655,9 @@ html[dir=rtl] .ourPrograms .rocket{
   line-height: 42px;
   color: var(--main_color);
   margin-bottom: 12px;
+}
+html[dir=rtl]  .programs h3{
+  line-height: 123px;
 }
 .programs1 h3 {
 font-family: "PF1";
@@ -903,6 +889,9 @@ padding: 16px 12px 18px 12px;
   font-family: "DK Cool";
   margin: 0;
   min-width: fit-content;
+}
+html[dir=rtl] .courses .part .headCoursers h3 {
+  font-size: 64px;
 }
 .courses .part .headCoursers span{
   display: block;
@@ -1287,6 +1276,9 @@ html[dir=rtl] .bookingForm .maskgroup{
   line-height: 42px;
   text-align: center;
   font-family: 'DK Cool';
+}
+html[dir=rtl] .bookingForm h2 {
+  font-size: 64px;
 }
 .bookingForm h2 span {
   color: var(--main_color);
@@ -2532,6 +2524,9 @@ margin-bottom: 10px;
   margin: 0;
   width: fit-content;
 }
+html[dir=rtl] .used .head h2 {
+  font-size: 64px;
+}
 .used .head img {
   z-index: 2;
   position: absolute;
@@ -2678,6 +2673,9 @@ background-size: cover;
   font-size: 32px;
   font-family: "DK Cool";
   margin-bottom: 20px;
+}
+html[dir=rtl] .pay h1 {
+  font-size: 64px;
 }
 .pay h2{
   font-size: 20px;
@@ -2972,6 +2970,10 @@ flex: 1;
   .productScreen .info .parts .samePart h3{
    margin-bottom: 10px;
     font-family: "DK Cool";
+    font-size: 24px;
+  }
+  html[dir=rtl] .productScreen .info .parts .samePart h3 {
+    font-size: 40px;
   }
   .productScreen .info .parts .samePart .sameFont{
     font-size: 16px;
