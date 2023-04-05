@@ -2665,10 +2665,130 @@ line-height: 35px;
 /*==================================end globally==============================*/
 
 
+/*==================================start pay==============================*/
+.pay{
+background-image: url('../images/backPage.webp');
+background-repeat: no-repeat;
+background-size: cover;
+}
+.pay .container{
+  padding-top: 80px;
+}
+.pay h1{
+  font-size: 32px;
+  font-family: "DK Cool";
+  margin-bottom: 20px;
+}
+.pay h2{
+  font-size: 20px;
+line-height: 26px;
+font-family: "DM Sans2";
+margin-bottom: 4px;
+}
+.pay .items{
+  display: flex;
+ flex-direction: column;
+  gap: 28px;
 
 
+}
+.pay .items .item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 18px 20px;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.12);
+  background-color: white;
+  width: 100%;
+}
+.pay .items .item .part1{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.pay .items .item .part1 img{
+  
+}
+.pay .items .item .part1 .phonenum{
+display: flex;
+gap: 4px;
+align-items: flex-start;
 
+}
+.pay .items .item .part1 .phonenum .allNumbers{
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 
+}
+.pay .items .item .part1 h3{
+  font-size: 14px;
+line-height: 18px;
+color: #7D7D7D;
+font-family: "DM Sans3";
+margin: 0;
+}
+.pay .items .item .part1  p{
+  font-size: 16px;
+line-height: 18px;
+text-decoration: underline;
+color: var(--scound_color);
+
+}
+.pay .items .item .part1  p span{
+  color: #7D7D7D;
+  font-size: 14px;
+  padding: 0px 14px;
+  display: inline-block;
+}
+.pay .items .item .btn_page2{
+  width: 212px;
+  max-width: 90%;
+height: 44px;
+font-size: 16px;
+}
+@media(max-width:450px){
+  .pay .items .item .part1  p{
+    font-size: 14px;
+  
+  
+  }
+  .pay .items .item .part1 img {
+    width: 60px;
+}
+  .pay .items .item .part1 h3{
+    font-size: 12px;
+  }
+  .pay .items .item .btn_page2{
+    margin: auto;
+    height: 36px;
+    font-size: 14px;
+  }
+  .pay .items .item{
+    
+    padding: 10px 10px;
+    
+  }
+  .pay .items .item .part1 {
+   
+    gap: 10px;
+}
+.pay h2 {
+  font-size: 18px;
+ 
+}
+.pay .items .item .part1 p span {
+  font-size: 12px;
+  padding: 0px 8px;
+}
+.pay h1 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+}
+/*==================================end pay==============================*/
 
 
 
@@ -2745,6 +2865,20 @@ footer .part .contact2 a {
   gap: 12px;
   direction: ltr;
 }
+footer .part .payFooter{
+  margin-top: 38px;
+
+}
+footer .part .payFooter .imgPay{
+  display: flex;
+  align-items: center;
+ 
+  gap: 12px;
+  margin-top: 16px;
+}
+footer .part .payFooter .imgPay img{
+  height: 30px;
+}
 footer .copy {
   display: flex;
   align-items: center;
@@ -2777,6 +2911,10 @@ footer .copy p a {
   footer .copy {
     width: 100%;
   }
+  footer .part .payFooter {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 }
 /*==================================end footer==============================*/
 .odometer.odometer-auto-theme,
