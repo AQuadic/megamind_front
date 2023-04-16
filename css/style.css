@@ -5,6 +5,7 @@
   font-family: "DM Sans2";
 }
 body {
+  padding-top: 65px;
 }
 
 @font-face {
@@ -191,6 +192,7 @@ html[dir=rtl] .head_title h2  {
 
 .navbar {
   padding-top: 1rem;
+  background-color: white;
 }
 .navbar-toggler {
   border: 0 !important;
@@ -816,6 +818,7 @@ font-family: "PF1";
   gap: 50px 30px;
   flex-wrap: wrap;
   justify-content: center;
+  position: relative;
 }
 .courses .items .item {
   max-width: 100%;
@@ -940,6 +943,32 @@ html[dir=rtl] .courses .part .headCoursers h3 {
   background-color: rgba(241, 112, 68, 0.2);
   flex: 1;
 } 
+
+.itemsOwl{
+  direction: ltr;
+}
+
+
+.courses .items .owl-next{
+position: absolute;
+top: 50%;
+right: 0;
+transform: translateY(-50%);
+z-index: 500;
+}
+.courses .items .owl-prev{
+  position: absolute;
+  top: 50%;
+  left:  0;
+  transform: translateY(-50%);
+  z-index: 500;
+}
+.courses .items .owl-nav span {
+  font-size: 55px;
+  color: #ff7443;
+  font-weight: 300;
+  line-height: 0;
+}
 @media (max-width: 768px) {
   .courses .items .item img {
     width: 100%;

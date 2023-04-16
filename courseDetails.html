@@ -195,7 +195,10 @@
       </div>
         <div class="part mb100">
         
-          <div class="items ">
+          <div class="items itemsOwl owl-carousel owl-carousel2 owl-theme2 ">
+           
+
+           
             <div class="item col-md-4" >
               <img src="./images/screencapture1.webp" alt="courses" />
               <div class="itemAbout">
@@ -236,7 +239,20 @@
               </div>
               
             </div>
-            
+            <div class="item col-md-4" href="courseDetails.html">
+              <img src="./images/screencapture3.webp" alt="courses" />
+              <div class="itemAbout">
+                <h3 class="f-b">Advanced HTML</h3>
+                <h4 class="f-s">9-12 years . 11 session</h4>
+                <p>Online - In Person</p>
+                <div class="price">
+                  <span class="sall f-s">679.99 EGP</span>
+                  <span class="priceNow f-b">679.99 EGP</span>
+                </div>
+                <a href="courseDetails.html" class="btn_page2">Join Now</a>
+              </div>
+              
+            </div>
           </div>
         </div>
       </div>
@@ -313,5 +329,42 @@
     <script src="js/jquery-3.6.1.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="./js/owl.carousel.min.js"></script>
+    <script>
+      $(".owl-carousel2").owlCarousel({
+       /*navText: [
+       '   <img src="./images/left.webp" alt=""/> ',
+         '  <img src="./images/right.webp" alt=""/>',
+       ],*/
+       loop: true,
+       dots: false,
+       autoplay:true,
+       autoplayTimeout:2000,
+autoplayHoverPause:true,
+       margin: 10,
+       nav: true,
+       center: false,
+       responsiveClass: true,
+       responsive: {
+         0: {
+           items: 1,
+           center: false,
+         },
+         768: {
+           items: 1.7,
+         },
+         992: {
+           items: 2.2,
+         },
+         1200: {
+           items: 2.4,
+           loop: true,
+         },
+         1400: {
+           items: 3,
+           loop: true,
+         },
+       },
+     });
+   </script>
   </body>
 </html>
