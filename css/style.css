@@ -6,8 +6,17 @@
 }
 body {
   padding-top: 65px;
+  position: relative;
 }
-
+.fixIcon {
+  position: fixed;
+  top: 90%;
+  right: 34px;
+  z-index: 50000;
+}
+.fixIcon img{
+  width: 50px;
+}
 @font-face {
   font-family: "DM Sans";
   src: url("../fonts/DMSans-Bold.ttf");
