@@ -320,7 +320,71 @@
                 <label class="form-check-label" for="gridCheck1"> Friday </label>
               </div>
             </div>
-  
+            <div class="col-md-12">
+              <label for="inputLocation" class="form-label"
+                >Subscription Method <span>*</span>
+                <p> “Please Select one of the methods”</p></label
+              >
+             
+             <div class="checkgroub">
+              <div class="form-check">
+                <input
+                  class="form-check-input dates2"
+                  type="checkbox"
+                  id="gridCheck1"
+                  checked
+                />
+                <label class="form-check-label" for="gridCheck1">
+                  <div class="method active">
+                    <h4>Monthly</h4>
+                    <h5> 250 <span>EGP</span></h5>
+                    <ul class="active">
+                      <li>
+                        <img src="./images/subTrue.svg" alt="true">
+                        <h6>12 Sessions</h6>
+                      </li>
+                      <li>
+                        <img src="./images/subTrue.svg" alt="true">
+                        <h6>12 Sessions</h6>
+                      </li>
+                      <li>
+                        <img src="./images/subTrue.svg" alt="true">
+                        <h6>12 Sessions</h6>
+                      </li>
+                    </ul>
+                  </div>
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input dates2"
+                  type="checkbox"
+                  id="gridCheck1"
+                />
+                <label class="form-check-label" for="gridCheck1">
+                  <div class="method ">
+                    <h4>Monthly</h4>
+                    <h5> 250 <span>EGP</span></h5>
+                    <ul class="active">
+                      <li>
+                        <img src="./images/subTrue.svg" alt="true">
+                        <h6>12 Sessions</h6>
+                      </li>
+                      <li>
+                        <img src="./images/subTrue.svg" alt="true">
+                        <h6>12 Sessions</h6>
+                      </li>
+                      <li>
+                        <img src="./images/subTrue.svg" alt="true">
+                        <h6>12 Sessions</h6>
+                      </li>
+                    </ul>
+                  </div>
+                </label>
+              </div>
+             </div>
+             
+            </div>
             <input type="submit" value="Book" class="btn_page" />
           </form>
         </div>
@@ -416,6 +480,9 @@
     <script>
       $(".dates").on("change", function () {
         $(".dates").not(this).prop("checked", false);
+      });
+      $(".dates2").on("change", function () {
+        $(".dates2").not(this).prop("checked", false);
       });
       $(".location").on("change", function () {
         $(".location").not(this).prop("checked", false);

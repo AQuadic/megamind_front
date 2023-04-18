@@ -1516,7 +1516,7 @@ color: var(--main_color) !important;
 }
 .bookingForm .content form {
   margin: auto;
-  max-width: 458px;
+  max-width: 520px;
 }
 .form_page {
   width: 100%;
@@ -1579,6 +1579,71 @@ html[dir="ltr"] .form-check .form-check-input {
 html[dir="rtl"] .form-check .form-check-input {
   float: right;
 }
+.bookingForm .checkgroub{
+display: flex;
+justify-content: space-between;
+margin-top: 24px;
+flex-wrap: wrap;
+
+}
+.bookingForm .checkgroub label{
+
+}
+.bookingForm .checkgroub .method{
+padding: 16px 12px;
+border: 1px solid #E2E2E2;
+min-width: 203px;
+flex-grow: 1;
+}
+.bookingForm .checkgroub .method.active{
+  border: 1px solid #F17044;
+}
+.bookingForm .checkgroub .method h4{
+  font-size: 14px;
+  line-height: 15px;
+  font-family: "DK Cool";
+  text-align: center;
+  color: #19A0BB;
+  margin-bottom: 8px;
+}
+.bookingForm .checkgroub .method h5{
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  font-family: "DM Sans";
+}
+.bookingForm .checkgroub .method h5 span{
+font-size: 16px;
+font-family: "DM Sans3";
+color: #555555;
+}
+.bookingForm .checkgroub .method ul{
+padding: 12px 0px 8px ;
+display: flex;
+flex-direction: column;
+gap: 12px;
+border-top:1px solid  #F3F3F3 ;
+}
+
+.bookingForm .checkgroub .method ul li{
+display: flex;
+align-items: center;
+gap: 4px;
+}
+.bookingForm .checkgroub .method ul li img{
+width: 20px;
+height: 20px;
+}
+.bookingForm .checkgroub .method ul li h6{
+  font-size: 12px;
+  line-height: 16px;
+}
+
+
+
+
+
+
 @media (max-width: 500px) {
   .bookingForm .content {
     padding: 32px 6px;
@@ -2358,6 +2423,33 @@ form .tel::after {
 .successPage p {
   font-size: 16px;
   line-height: 30px;
+}
+.successPage .here{
+  display: flex;
+  align-items: center;
+  gap: 4px; 
+  justify-content: center;
+  margin-top: 32px;
+  font-family: "DM Sans";
+}
+.successPage .here h3{
+  font-size: 14px;
+line-height: 18px;
+margin: 0;
+font-family: "DM Sans";
+}
+.successPage .here a{
+  color: #19A0BB;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  text-decoration: underline;
+  font-family: "DM Sans";
+}
+.successPage .here a img{
+  margin: 0;
 }
 /*==================================end successPage==============================*/
 
