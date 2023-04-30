@@ -4688,6 +4688,37 @@ html[dir="rtl"] .addressSave .del_edit .dot span {
   line-height: 20px;
   color: #454343;
 }
+.Follow-UpEmpty{
+max-width: 470px;
+margin-bottom: 60px;
+margin-top: 60px;
+}
+.Follow-UpEmpty h2 {
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.Follow-UpEmpty img{
+max-width: 390px;
+width: 100%;
+height: auto;
+margin: auto;
+display: block;
+}
+.Follow-UpEmpty p{
+  font-size: 16px;
+  line-height: 21px;
+  color: #5E5E5E;
+  margin-bottom: 12px;
+}
+.Follow-UpEmpty form{
+
+}
+.Follow-UpEmpty form input[type="submit"]{
+margin:36px auto 0px;
+
+}
 /*end Follow-Up*/
 @media (max-width: 992px) {
   .account {
