@@ -2857,11 +2857,11 @@ transform: translateY(-50%) rotateY(180deg);
   position: relative;
   justify-content: flex-end;
 }
-.globally .parts .part1{
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 0;
+.globally .parts .part1 {
+  /* position: absolute; */
+  /* transform: translateY(-50%); */
+  max-width: 560px;
+  width: 100%;
 }
 html[dir=rtl] .globally .parts .part1{
   left: auto;
@@ -2898,9 +2898,18 @@ gap: 12px;
 line-height: 35px;
 }
 .globally .parts .part2{
-  
+  position: relative;
 }
-.globally .parts .part2 img{
+.globally .parts .part2 .world{
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  max-width: 100%;
+}
+.globally .parts .part2 .map{
   max-width: 100%;
 }
 @media(max-width:992px){
@@ -2983,7 +2992,8 @@ margin-bottom: 4px;
 display: flex;
 gap: 4px;
 align-items: flex-start;
-
+flex-wrap: wrap;
+margin-top: 8px;
 }
 .pay .items .item .part1 .phonenum .allNumbers{
   display: flex;
@@ -3016,10 +3026,11 @@ color: var(--scound_color);
   max-width: 90%;
 height: 44px;
 font-size: 16px;
+text-align: center;
 }
 @media(max-width:450px){
   .pay .items .item .part1  p{
-    font-size: 14px;
+    font-size: 12px;
   
   
   }
