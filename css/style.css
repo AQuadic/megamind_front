@@ -1608,14 +1608,33 @@ flex-grow: 1;
 }
 .bookingForm .checkgroub .method h5{
   font-size: 40px;
-  line-height: 52px;
+  line-height: 44px;
   text-align: center;
   font-family: "DM Sans";
+  margin: 0;
 }
 .bookingForm .checkgroub .method h5 span{
 font-size: 16px;
 font-family: "DM Sans3";
 color: #555555;
+}
+.bookingForm .checkgroub .method p{
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #EA4C1A;
+  display: block;
+  margin:0px auto 10px;
+
+}
+.bookingForm .checkgroub .method p span{
+  font-size: 16px;
+line-height: 21px;
+text-align: center;
+text-decoration-line: line-through;
+padding: 0px 4px;
+color: #969696;
+font-family: "DM Sans3"
 }
 .bookingForm .checkgroub .method ul{
 padding: 12px 0px 8px ;
