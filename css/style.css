@@ -3186,6 +3186,10 @@ footer .copy p a {
   height: 20px;
   object-fit: contain;
 }
+html[dir="rtl"] footer .part .contUS {
+  
+  align-self: end;
+}
 @media (max-width: 768px) {
   footer .copy {
     width: 100%;
@@ -3194,7 +3198,13 @@ footer .copy p a {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+footer .part {
+ 
+   flex: 1; 
+   width: 100%; 
 }
+}
+
 /*==================================end footer==============================*/
 .odometer.odometer-auto-theme,
 .odometer.odometer-auto-theme .odometer-digit,
