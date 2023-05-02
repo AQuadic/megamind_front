@@ -5741,3 +5741,14 @@ html[dir=rtl] .iti__country-list {
         opacity: 0;
     }
 }
+.allStars{
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    margin-bottom: 16px;
+    padding: 0px 4px;
+}
+.allStars img{
+    width: 14px;
+    height: 14px;
+}
