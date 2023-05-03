@@ -149,7 +149,7 @@ html::-webkit-scrollbar-track {
 .head_title h2 {
     text-align: center;
     font-size: 32px;
-    line-height: 42px;
+    line-height: 66px;
     font-family: 'DK Cool';
 }
 
@@ -174,13 +174,16 @@ html[dir=rtl] .head_title h2 {
 
 @media (max-width: 580px) {
     .head_title span {
-        font-size: 50px;
-        line-height: 100px;
+        font-size: 60px;
+        line-height: 80px;
     }
 
     .head_title h2 {
         font-size: 20px;
-        line-height: 42px;
+       
+    }
+    html[dir=rtl] .head_title h2 {
+        font-size: 42px;
     }
 }
 
@@ -1497,6 +1500,8 @@ html[dir=rtl] .courses .part .headCoursers h3 {
     height: 370px;
     width: 44%;
     max-width: 100%;
+    border: 1px solid #C6C6C6;
+    border-radius: 10px;
 }
 
 .courseDetails .cart .part2 {
@@ -1845,7 +1850,7 @@ html[dir="rtl"] .form-check .form-check-input {
     justify-content: space-between;
     margin-top: 24px;
     flex-wrap: wrap;
-
+gap: 2px    ;
 }
 
 .bookingForm .checkgroub label {
@@ -1949,6 +1954,29 @@ html[dir="rtl"] .form-check .form-check-input {
         font-size: 20px;
         font-weight: bold;
         margin-bottom: 22px;
+    }
+    .form-check {
+       
+        
+        flex: 1;
+        width: 100%;
+    }
+    .bookingForm .checkgroub label {
+      
+        width: 100%;
+    }
+    .bookingForm .checkgroub .method {
+        padding: 16px 8px;
+      
+        min-width: 135px;
+    
+        width: 100%;
+        max-width: 300px;
+    }
+    .bookingForm .checkgroub .method h5 {
+        font-size: 20px;
+      
+       
     }
 }
 
@@ -3195,7 +3223,7 @@ form .tel::after {
 
 .used .head {
 
-    margin-bottom: 10px;
+    margin-bottom: 16px;
 }
 
 .used .head h2 {
@@ -3240,6 +3268,7 @@ html[dir=rtl] .used .head img {
     overflow: hidden;
     white-space: nowrap;
     position: relative;
+    direction: ltr;
 }
 
 .logos:hover .logos-slide {
@@ -3260,6 +3289,10 @@ html[dir=rtl] .used .head img {
     .logos-slide img {
         height: 48px;
         margin: 0 16px;
+    }
+    html[dir=rtl] .used .head h2 {
+        font-size: 42px;
+        line-height: 55px;
     }
 }
 
@@ -3675,11 +3708,7 @@ html[dir="rtl"] footer .part .contUS {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-footer .part {
- 
-   flex: 1; 
-   width: 100%; 
-}
+
 }
 
 
@@ -3702,9 +3731,21 @@ footer .part {
         margin-top: 20px;
         margin-bottom: 20px;
     }
+   
 }
 
-
+@media (max-width: 530px) {
+    footer .part .links {
+    
+        flex-direction:row; 
+       
+        flex-wrap: wrap;
+    }
+    footer .part .links a {
+       
+        width: 32%;
+    }
+}
 /*==================================end footer==============================*/
 .odometer.odometer-auto-theme,
 .odometer.odometer-auto-theme .odometer-digit,
