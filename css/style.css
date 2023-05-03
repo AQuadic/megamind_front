@@ -3137,7 +3137,7 @@ form .tel::after {
     background-image: none !important;
     border-radius: 20px;
     padding: 24px 16px;
-    height: 268px !important;
+   
     width: 460px;
     max-width: 96%;
     overflow: hidden;
