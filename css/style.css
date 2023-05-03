@@ -1816,7 +1816,9 @@ html[dir=rtl] .bookingForm h2 {
     padding: 8px 16px;
     background-position: right 0.75rem center;
 }
-
+html[dir=rtl] .form_page .form-select {
+    background-position: left 0.75rem center;
+}
 .form_page .form-select option {
     color: black;
 }
