@@ -6,10 +6,21 @@
 }
 
 body {
-    padding-top: 65px;
+    padding-top: 104px;
     position: relative;
 }
-
+@media(max-width:1400px){
+    body {
+        padding-top: 82px;
+      
+    } 
+}
+@media(max-width:992px){
+    body {
+        padding-top: 66px;
+      
+    } 
+}
 .fixIcon {
     position: fixed;
     top: 80%;
