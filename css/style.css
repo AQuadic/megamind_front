@@ -1502,17 +1502,16 @@ html[dir=rtl] .courses .part .headCoursers h3 {
 
 .courseDetails .cart {
     display: flex;
-
-    justify-content: center;
     gap: 20px;
 }
 
 .courseDetails .cart .imgcart {
     height: 370px;
-    width: 44%;
+    width: 100%;
     max-width: 100%;
     border: 1px solid #C6C6C6;
     border-radius: 10px;
+    flex: 0.5;
 }
 
 .courseDetails .cart .part2 {
