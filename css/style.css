@@ -5805,3 +5805,79 @@ html[dir=rtl] .iti__country-list {
     width: 14px;
     height: 14px;
 }
+/*edit21/5*/
+.table-wrapper {
+    overflow-x: auto;
+      
+      margin-top: 12px;
+  }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    outline: 1px solid #F1EDED;
+    min-width: 620px;
+    font-size: 16px;
+    font-family: "DM Sans2";
+  }
+  
+  tr {
+    font-size: 16px;
+    font-family: "DM Sans2";
+    border: 1px solid #F1EDED;
+  }
+  
+  td:first-child {
+    width: 156px;
+    font-family: "DM Sans2";
+    border-right: 1px solid #F1EDED;
+  }
+  
+  td:nth-child(2){
+    width: 388px;
+    font-family: "DM Sans2";
+    border-right: 1px solid #F1EDED;
+  }
+  
+  td:last-child {
+    width: 210px;
+    font-family: "DM Sans2";
+  }
+  
+  td {
+    font-size: 16px;
+    font-family: "DM Sans2";
+    border-top: 1px solid #F1EDED;
+    border-bottom: 1px solid #F1EDED;
+    padding: 10px;
+  }
+  table img{
+    width: 100%;
+  }
+  table .seeDetails{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+background: rgba(50, 50, 50, 0.7);
+border-radius: 0px 10px;
+top: 0;
+right: 0;
+z-index: 50;
+  }
+  table .seeDetails p{
+    font-size: 14px;
+    line-height: 18px;
+    min-width: fit-content;
+    color: #FF7443;
+    font-family: "DM Sans";
+  }
+  table .t-bold{
+
+  }
+  table .t-regular{
+    font-family: "DM Sans3";
+    color: #404040;
+  }
