@@ -5837,6 +5837,7 @@ table {
   td:nth-child(2){
     width: 388px;
     font-family: "DM Sans2";
+   border-left: 1px solid #F1EDED;
     border-right: 1px solid #F1EDED;
   }
   
@@ -5902,3 +5903,13 @@ z-index: 50;
     font-family: "DM Sans3";
     color: #404040;
   }
+  .table>:not(caption)>*>* {
+   
+  
+    border-left: 1px solid #F1EDED;
+    border-right: 1px solid #F1EDED;
+}
+th, td {
+    text-align: start;
+  
+}
