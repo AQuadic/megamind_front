@@ -5852,9 +5852,19 @@ table {
     border-bottom: 1px solid #F1EDED;
     padding: 10px;
   }
-  table img{
+  table img {
     width: 100%;
-  }
+    max-height: 230px;
+    /* object-fit: cover; */
+    max-width: 274px;
+    display: block;
+    margin-left: auto;
+}
+html[dir=rtl] table img {
+
+    margin-left: 0;
+    margin-right: auto;
+}
   table .seeDetails{
     position: absolute;
     display: flex;
@@ -5866,6 +5876,17 @@ border-radius: 0px 10px;
 top: 0;
 right: 0;
 z-index: 50;
+  }
+  html[dir=rtl]  table .seeDetails{
+    
+border-radius: 10px 0px;
+top: 0;
+right: auto;
+left: 0;
+z-index: 50;
+  }
+  html[dir=rtl] table .seeDetails img{
+    transform: rotateY(180deg);
   }
   table .seeDetails p{
     font-size: 14px;
