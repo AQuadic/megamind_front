@@ -1779,6 +1779,8 @@ html[dir=rtl] .bookingForm h2 {
 .bookingForm .content form {
     margin: auto;
     max-width: 520px;
+    z-index: 1020;
+    position: relative;
 }
 
 .form_page {
