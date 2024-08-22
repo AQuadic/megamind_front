@@ -339,6 +339,7 @@ html[dir=rtl] .head_title h2 {
 }
 
 .navbar-brand img {
+    width:250px !important;
 }
 
 .navbar-nav .nav-link {
@@ -349,7 +350,7 @@ html[dir=rtl] .head_title h2 {
 }
 
 html[dir=rtl] .navbar-nav .nav-link {
-    font-size: 24px;
+    font-size: 16px;
 }
 
 .navbar-nav .nav-link.active {
@@ -409,7 +410,7 @@ html[dir=rtl] .endnav .btn_nav {
 }
 
 html[dir=rtl] .endnav h4 {
-    font-size: 20px;
+    font-size: 14px;
 }
 
 .endnav ul {
@@ -3633,6 +3634,10 @@ footer .part .contact2 p {
 }
 
 footer .part .links {
+    display:flex;
+}
+
+footer .part .links .subLinks {
     display: flex;
     flex-direction: column;
     gap: 16px;
