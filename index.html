@@ -30,6 +30,8 @@
   <link rel="stylesheet" href="./css/animate.css">
   <link rel="stylesheet" href="./css/enFont.css">
   <link rel="stylesheet" href="./css/style.css" />
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
   <div class="fixIcon">
@@ -37,7 +39,7 @@
   </div>
     <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
         <div class="container">
-          <a class="navbar-brand" href="index.html"><img src="./images/megaminds-academy.webp" class="headerLogo" alt="logo"></a>
+          <a class="navbar-brand" href="index.html"><img src="./images/megaminds-academy.webp" alt="logo"></a>
          <div class="navbar-toggler2">
           <a href="courses.html" class="btn_page">Join Now</a>
           <button
@@ -93,7 +95,7 @@
             <li><a class="dropdown-item" href="followUp.html"> <img src="./images/followUp.webp" alt="myProfile"> <p>Follow-up</p></a></li>
             <li><a class="dropdown-item" href="myCart.html"> <img src="./images/myCart.webp" alt="myProfile"> <p>My Cart</p></a></li>
           
-           
+
             <li><a class="dropdown-item" href="myOrders.html"> <img src="./images/myOrder.webp" alt="myOrder"> <p>My Orders</p></a></li>
           
             <li>
@@ -165,59 +167,7 @@
             </div>
         </section>
       </header>
-      <section class="gallery  mb100">
-        <img src="./images/maskgroup.webp" alt="maskgroup" class="maskgroup">
-        <div class="head_title">
-          <span>[</span>
-          <h2>Our Achievement</h2>
-          <span>]</span>
-        </div>
-       <div class="parts container">
-        <div class="part1 wow bounceIn" data-wow-duration="1s" >
-          <img src="./images/arrowTarget.webp" alt="arrowTarget" class="arrowTarget">
-        </div>
-        <div class="part2 "  >
-          <div class="cricle wow rotateInDownLeft" data-wow-duration="1s">
-          <div class="item item1 " >
-            <span>
-              
-            </span>
-            <div class="content">
-              <img src="./images/Cstudents.svg"  alt="student">
-              <h3><b>580</b> Enrolled Students</h3>
-            </div>
-          </div>
-          <div class="item item2 " >
-            <span>
-              
-            </span>
-            <div class="content">
-              <img src="./images/C2.svg"  alt="student">
-              <h3><b>580</b>Qualified Trainers</h3>
-            </div>
-          </div>
-          <div class="item item3 " >
-            <span>
-              
-            </span>
-            <div class="content">
-              <img src="./images/C3.svg"  alt="student">
-              <h3><b>250</b>  Training Hours</h3>
-            </div>
-          </div>
-          <div class="item item4 " >
-            <span>
-              
-            </span>
-            <div class="content">
-              <img src="./images/C4.svg"  alt="student">
-              <h3><b>25 </b> Participate in a Completions</h3>
-            </div>
-          </div>
-          </div>
-        </div>
-       </div>
-      </section>
+    
 
 <section class="ourPrograms wow bounce"  data-wow-duration="1s" >
 <img src="./images/rocket.webp" class="rocket" alt="rocket">
@@ -446,7 +396,7 @@
       <img src="./images/Languages.svg" alt="Languages">
       <h3>Languages</h3>
     </div>
-    <p>Ar <span>-</span> English</p>
+    <p>Arabic <span>-</span> English</p>
   </li>
   <li>
     <div class="tilteLi">
@@ -521,7 +471,7 @@
 </div>
 </section>
 
-<!-- <section class="used  mb100">
+<section class="used  mb100">
   <div class="head container">
     <h2>The Programs used  <img src="./images/used.webp" alt="Programs-used"></h2>
    
@@ -552,7 +502,7 @@
     </div>
   </div>
   
-</section> -->
+</section>
 
 
 <Section class="globally mb100 container">
@@ -583,7 +533,74 @@
 
 </Section>
 
- 
+<!-- Start FAQS -->
+<div class="container containerFAQs">
+  <div class="FAQs_content">
+    <h2>FAQs</h2>
+    <p>Our Expert Advisors Can Help You Find The Right Workplace Solution For You And Your Team</p>
+  </div>
+  <!-- Accordion -->
+  <div class="accordion">
+    <article>
+      <input id="article1" type="radio" name="articles" checked>
+      <label for="article1">
+        <h2>Where can I purchase courses?</h2>
+        <span>
+        <ion-icon name="chevron-down-outline"></ion-icon>
+      </span>
+      </label>
+      <div>
+        Here are three ways to purchase your courses:
+        <ol>
+          <li>Click the "Try it now" button above to purchase your Trial Lessons;</li>
+          <li>Purchase courses on the official website;</li>
+          <li>Download the "Creta Class" app and purchase your desired courses in the app.</li>
+        </ol>
+      </div>
+    </article>
+
+    <article>
+      <input id="article2" type="radio" name="articles">
+      <label for="article2">
+        <h2>Can I get a refund at any time?</h2>
+        <span>
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </span>
+        </label>
+      <div>
+        Can I get a refund at any time?
+      </div>
+    </article>
+
+    <article>
+      <input id="article3" type="radio" name="articles">
+      <label for="article3">
+        <h2>Where can I find my purchased courses?</h2>
+        <span>
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </span>
+      </label>
+      <div>
+        Where can I find my purchased courses?
+      </div>
+    </article>
+
+    <article>
+      <input id="article4" type="radio" name="articles">
+      <label for="article4">
+        <h2>After a completed purchase, when will the course start?</h2>
+        <span>
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </span>
+      </label>
+      <div>
+        After a completed purchase, when will the course start?
+      </div>
+    </article>
+  </div>
+</div>
+<!-- End FAQS -->
+
 
 
 

@@ -3576,6 +3576,82 @@ html[dir=rtl] .pay h1 {
 /*==================================end pay==============================*/
 
 
+/* FAQs */
+    .containerFAQs {
+        margin-bottom:40px;
+    }
+    .FAQs_content {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .FAQs_content h2 {
+        font-size:48px;
+        font-weight: 800;
+    }
+
+    .FAQs_content p {
+        font-size: 16px;
+        color: #7B7B7B;
+    }
+
+    .accordion article {
+        border: 1px solid #E2E4EB;
+        outline: 2px solid #E2E4EB;
+        border-radius:10px;
+        margin-bottom:20px;
+    }
+
+    .accordion input[type="radio"] {
+        display: none;
+    }
+
+    .accordion label {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px;
+        background-color: #F7F7FA;
+        cursor: pointer;
+    }
+
+    .accordion label h2 {
+        margin: 0;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .accordion label span {
+        transition: transform 0.3s;
+    }
+
+    .accordion input[type="radio"]:checked + label span {
+        transform: rotate(180deg);
+    }
+
+    .accordion input[type="radio"] + label + div {
+        display: none;
+    }
+
+    .accordion input[type="radio"]:checked + label + div {
+        display: block;
+        padding: 16px;
+        font-size: 14px;
+        color: #333;
+        background-color:#F7F7FA
+
+    }
+
+    .accordion div ol {
+        padding-left: 20px;
+        margin-top: 8px;
+    }
+
+    .accordion div ol li {
+        margin-bottom: 8px;
+    }
+/* FAQs */
+
 /*==================================start footer==============================*/
 footer {
     color: #ffffff;
