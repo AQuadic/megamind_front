@@ -2900,6 +2900,285 @@ form .tel::after {
 /*==================================end successPage==============================*/
 
 
+/* Start Pric */
+.pricing-section {
+    margin-top: 6rem;
+    background-color: #F9FAFB;
+    padding: 2.5rem;
+}
+
+.head_content {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.content h2 {
+    padding-bottom: 1.25rem;
+    font-family: 'DK Cool';
+    font-size: 32px;
+    line-height: 66px;
+}
+
+.content p {
+    padding-bottom: 1.25rem;
+    font-weight: 400;
+    color: #737373;
+}
+
+.toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.save-button {
+    width: 109px;
+    height: 44px;
+    background-color: #B2E3FF;
+    border-radius: 1.5rem;
+    border: none;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 1.25rem;
+    margin-top: 5rem;
+    padding: 0 1.5rem; 
+}
+
+.card {
+    position:relative;
+    max-width: 100%;
+    border: 1px solid #D1D5DB;
+    border-radius: 0.75rem;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+    margin-bottom: 2rem; 
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-content {
+    text-align: center;
+    padding: 2.5rem 1.5rem; 
+}
+
+.card-content h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+.card-content p {
+    font-weight: bold;
+    color: #737373;
+    padding-bottom: 1rem;
+}
+
+.card-content h2 {
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: #23A6F0;
+}
+
+.card-content span {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #8EC2F2;
+}
+
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+    margin: 10px;
+}
+
+.toggle-switch .toggle-input {
+    display: none;
+}
+
+.toggle-switch .toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 24px;
+    background-color: #fff;
+    border-radius: 34px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: 1px solid #23A6F0;
+}
+
+.toggle-switch .toggle-label::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.toggle-switch .toggle-input:checked + .toggle-label {
+    background-color: #23A6F0;
+}
+
+.toggle-switch .toggle-input:checked + .toggle-label::before {
+    transform: translateX(16px);
+}
+
+.toggle-switch.light .toggle-label {
+    background-color: #BEBEBE;
+}
+
+.toggle-switch.light .toggle-input:checked + .toggle-label {
+    background-color: #9B9B9B;
+}
+
+.toggle-switch.light .toggle-input:checked + .toggle-label::before {
+    transform: translateX(6px);
+}
+
+.toggle-switch.dark .toggle-label {
+    background-color: #4B4B4B;
+}
+
+.toggle-switch.dark .toggle-input:checked + .toggle-label {
+    background-color: #717171;
+}
+
+.toggle-switch.dark .toggle-input:checked + .toggle-label::before {
+    transform: translateX(16px);
+}
+
+
+.silver-icon img {
+    position:absolute;
+    left:50%
+}
+
+.card-button {
+    display: flex;
+    justify-content: center;
+    padding-top: 1.75rem;
+}
+
+.card-button button {
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    border: 1px solid #3B82F6;
+    background-color: #3B82F6;
+    color: #fff;
+    width: 80%;
+    border-radius: 0.375rem;
+}
+
+.card-features ul {
+    margin-bottom: 2.5rem;
+    text-align: left;
+}
+
+.card-features li {
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.card-features i {
+    width: 2rem;
+    height: 2rem;
+    background-color: #2DC071;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.card-features i.disabled {
+    background-color: #BDBDBD;
+}
+
+.silver {
+    position: relative;
+    z-index: 20;
+}
+
+.silver-icon {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .cards {
+        padding: 0 0rem; 
+        margin:auto
+    }
+
+    .card {
+        flex: 1 1 calc(50% - 1rem); 
+    }
+
+    .toggle {
+        gap: 0.5rem;
+    }
+
+    .toggle-label-text {
+        font-size: 0.875rem;
+    }
+
+    .save-button {
+        font-size: 0.875rem;
+        padding: 8px 16px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        flex: 1 1 100%; 
+        width:100%
+    }
+
+    .card-features ul {
+        display:none;
+    }
+
+    .card-button {
+        padding-top:0px;
+        margin-bottom:10px
+    }
+
+    .toggle-label-text {
+        font-size: 0.75rem; /
+    }
+
+    .save-button {
+        font-size: 0.75rem;
+        padding: 6px 12px; 
+    }
+}
+
+/* End Price */
+
 /*==================================start structure==============================*/
 .structure {
     background: rgba(255, 125, 80, 0.8);
@@ -3720,7 +3999,7 @@ footer .part .links .subLinks {
 }
 
 footer .part .links a {
-    text-decoration: underline;
+    /* text-decoration: underline; */
     color: white;
 }
 
