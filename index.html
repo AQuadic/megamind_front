@@ -507,6 +507,80 @@
     </div>
 <!-- End Price -->
 
+
+<!-- Our Tracks -->
+    <Section class="our_tracks">
+      <div class="head_title">
+        <span>[</span>
+        <h2 > Our Tracks </h2>
+        <span>]</span>
+    </div>
+    <div class="container">
+      <div class="tabs">
+          <button class="tab tab1 active" onclick="openTab('coding')">Coding</button>
+          <button class="tab tab2" onclick="openTab('robotics')">Robotics</button>
+      </div>
+
+      <div class="ourTracks_Container">
+          <div class="levels">
+              <div class="level tab  active">Junior</div>
+              <div class="level">Senior</div>
+              <div class="level">Expert</div>
+          </div>
+
+          <div class="timeline">
+            <div>
+              <img src="./images/Group2791.png" alt="HTML Logo">
+              <div class="cards_content">
+                <div class="tracks_card">
+                <h6>3 Month</h6>
+                <p>12 Session</p>
+            </div>
+          </div>
+            </div>
+            <div>
+              <img src="./images/Group2791.png" alt="HTML Logo">
+              <div class="cards_content">
+              <div class="tracks_card">
+                <h6>3 Month</h6>
+                <p>12 Session</p>
+              </div>
+              </div>
+            </div>
+            <div>
+              <img src="./images/Group2791.png" alt="HTML Logo">
+              <div class="cards_content">
+                <div class="tracks_card">
+                  <h6>3 Month</h6>
+                <p>12 Session</p>
+              </div>
+              </div>
+            </div>
+            <div>
+              <img src="./images/Group2791.png" alt="HTML Logo">
+              <div class="cards_content">
+                <div class="tracks_card">
+                  <h6>3 Month</h6>
+                  <p>12 Session</p>
+              </div>
+              </div>
+            </div>
+            <div>
+              <img src="./images/Group2791.png" alt="HTML Logo">
+              <div class="cards_content">
+                <div class="tracks_card">
+                  <h6>3 Month</h6>
+                  <p>12 Session</p>
+              </div>
+              </div>
+            </div>
+          </div>
+      </div>
+  </div>
+
+    </Section>
+<!-- Our Tracks -->
+
 <Section class="structure ">
   <img src="./images/network.webp" alt="network" class="network">
   <div class="head_title">
@@ -781,7 +855,7 @@
   </div>
   
   <div class="cardI">
-    <div>
+        <div>
       <img src="./images/world.webp" style="width: 100%; height: 100%;" alt="">
     </div>
     <h2>Sales Enablement</h2>
@@ -952,6 +1026,15 @@
         }
     }
 })
+function openTab(tabName) {
+    var i;
+    var tabs = document.getElementsByClassName("tab");
+    for (i = 0; i < tabs.length; i++) {
+        tabs[i].className = tabs[i].className.replace(" active", "");
+    }
+    document.querySelector(`.tab[onclick="openTab('${tabName}')"]`).className += " active";
+}
+
    </script>
 <script>
 const numbers = document.querySelectorAll(".odometer")

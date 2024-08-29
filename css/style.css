@@ -3182,6 +3182,191 @@ form .tel::after {
 
 /* End Price */
 
+/* Our Tracks */
+.our_tracks{
+    background-image:url("../images/Frame3.png");
+    background: linear-gradient(125.65deg, #FEF5DB 0.81%, #FFDFDF 100%);
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab {
+    background-color: #fff;
+    border: 1px solid #FF6D25;
+    color: #FF6D25;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tab1 {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.tab2 {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.tab.active, .tab:hover {
+    background-color: #FF6D25;
+    color: #fff;
+}
+
+.ourTracks_Container {
+    display: flex;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.levels {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px dashed #ccc;
+    border-left: 9px solid #FF6D25;
+    border-bottom: 9px solid #FF6D25;
+}
+
+.level {
+    background-color: #fff;
+    border: 1px solid #ff6700;
+    color: #ff6700;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.level.active, .level:hover {
+    background-color: #ff6700;
+    color: #fff;
+}
+
+.timeline {
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap:20px;
+    padding-right:40px;
+    padding-left:42px;
+    margin-top:20px
+}
+
+.timeline::before {
+    content: '- -  -  -  -  -  -  -  - -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  >';
+    position: absolute;
+    top: 77%;
+    left: 0;
+    right: 0;
+    height: 4px;
+    z-index: 1;
+    font-weight: bold;
+    word-spacing: 15px; 
+}
+
+.cards_content::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 68%;
+    transform: translateY(-50%);
+    width: 41px; 
+    height: 71px; 
+    background-image: url('../images/flag.png');
+}
+
+
+.cards_content:last-child::after {
+    content: url('../images/Trophy_perspective_matte_s.png');
+    position: absolute;
+    right: -30px;
+    top: 73%;
+    transform: translateY(-50%);
+}
+
+.cards_content {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.tracks_card {
+    margin-top:1.25rem;
+}
+
+.tracks_card p {
+    font-size:10px;
+    margin-left:10px;
+}
+
+@media (max-width: 973px) {
+    .our_tracks {
+        padding: 15px;
+    }
+
+    .ourTracks_Container {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .levels {
+        flex-direction: row; 
+        margin-right: 0;
+        justify-content: space-between; 
+        margin-bottom: 20px; 
+    }
+
+    .level {
+        width: 30%;
+    }
+
+    .timeline {
+        flex-direction: column; 
+        gap: 20px;
+        padding: 0;
+        width: 100%; 
+    }
+
+    .timeline::before {
+        display: none; 
+    }
+
+    .cards_content {
+        justify-content: space-between;
+        margin-bottom: 20px; 
+        position: relative;
+        margin-left:20px
+    }
+
+    .cards_content::before {
+        display: none; 
+    }
+
+    .tracks_card {
+        margin: 0;
+        padding: 10px;
+        width: 100%; 
+    }
+
+
+    .cards_content:last-child::after {
+        display: none; 
+    }
+}
+/* Our Tracks */
+
 /*==================================start structure==============================*/
 .structure {
     background: rgba(255, 125, 80, 0.8);
