@@ -520,6 +520,9 @@ html[dir=rtl] .endnav ul li p {
         border-radius: 10px;
     }
 
+    .navbar-collapse .nav-link {
+        color:white
+    }
     .navbar-nav {
         align-items: center;
         padding: 20px;
@@ -528,7 +531,7 @@ html[dir=rtl] .endnav ul li p {
 
 @media (max-width: 580px) {
     .navbar-brand img {
-        width: 220px;
+        width: 100px !important;
     }
 
     .toggler-icon {
@@ -3930,6 +3933,103 @@ html[dir=rtl] .pay h1 {
         margin-bottom: 8px;
     }
 /* FAQs */
+
+/* Start Last Section */
+.Iterate {
+    padding:40px;
+}
+.Iterate .Iterate_Content {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.Iterate .Iterate_Content h3 {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.Iterate .Iterate_Content p {
+    color: #737373;
+}
+.Iterate .card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top:40px;
+    gap:50px
+}
+
+.Iterate .card-container .cardI {
+    width: 220px;
+    overflow: hidden;
+}
+
+.Iterate .card-container .cardI .img {
+    width: 254px;
+    height: 142px;
+    border-radius: 10px 10px 0 0;
+    background: linear-gradient(107.49deg, #EAEAEB 0%, #F7F7F7 100%);
+}
+
+.cardI h2 {
+    font-size: 18px;
+    margin: 15px 0 10px;
+    color: #737373;
+}
+
+.cardI p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.cardI span {
+    color:#737373;
+}
+
+.Iterate a {
+    display:flex;
+    justify-content:center;
+    margin-top:50px
+}
+
+.Iterate button {
+    border:none;
+    width:100%;
+    padding:5px
+}
+/* End Last section */
+
+
+/* Start View More */
+/* Start Header Section */
+.header-img {
+    width: 100%;
+    background-size: cover;
+}
+
+.content {
+    margin-top: 1.5rem; 
+}
+
+@media (min-width: 768px) {
+    .content {
+        margin-left: 6rem; 
+    }
+}
+
+.header-title {
+    font-weight: bold;
+    font-size: 2.25rem; 
+    color: #2d3748; 
+}
+
+.header-date {
+    margin-top: 0.75rem;
+    color: #a0aec0; 
+}
+/* End Header Section */
+
+/* End View More */
 
 /*==================================start footer==============================*/
 footer {
