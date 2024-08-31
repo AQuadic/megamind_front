@@ -3182,10 +3182,12 @@ form .tel::after {
 
 /* End Price */
 
+
 /* Our Tracks */
 .our_tracks{
     background-image:url("../images/Frame3.png");
     background: linear-gradient(125.65deg, #FEF5DB 0.81%, #FFDFDF 100%);
+    position:relative
 }
 
 .tabs {
@@ -3204,14 +3206,23 @@ form .tel::after {
 }
 
 .tab1 {
+    position:relative;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+}
+
+.tab1::after {
+    content:url('../images/Polygon1.png');
+    position:absolute;
+    top: 98%;
+    left: 40%;
 }
 
 .tab2 {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
+
 
 .tab.active, .tab:hover {
     background-color: #FF6D25;
@@ -3222,6 +3233,23 @@ form .tel::after {
     display: flex;
     border-radius: 20px;
     padding: 20px;
+}
+
+.roadmap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.track {
+    width: 100px; 
+    height: 2px; 
+    border-top: 2px dashed ; 
+}
+
+.track::after {
+    content:'';
+    position:absolute;
 }
 
 .levels {
@@ -3264,36 +3292,19 @@ form .tel::after {
     margin-top:20px
 }
 
-.timeline::before {
-    content: '- -  -  -  -  -  -  -  - -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  >';
-    position: absolute;
-    top: 77%;
-    left: 0;
-    right: 0;
-    height: 4px;
-    z-index: 1;
-    font-weight: bold;
-    word-spacing: 15px; 
+.timeline .roadmap_content img {
+    border:8px solid #F17044;
+    border-radius:20px;
 }
 
-.cards_content::before {
-    content: "";
-    position: absolute;
-    left: 0px;
-    top: 68%;
-    transform: translateY(-50%);
-    width: 41px; 
-    height: 71px; 
-    background-image: url('../images/flag.png');
-}
-
-
-.cards_content:last-child::after {
-    content: url('../images/Trophy_perspective_matte_s.png');
-    position: absolute;
-    right: -30px;
-    top: 73%;
-    transform: translateY(-50%);
+.roadmap-items {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:end;
+    left:23%;
+    position:absolute;
+    top:72%
 }
 
 .cards_content {
@@ -3303,12 +3314,41 @@ form .tel::after {
 }
 
 .tracks_card {
-    margin-top:1.25rem;
+    margin-top:2.25rem;
 }
 
 .tracks_card p {
     font-size:10px;
     margin-left:10px;
+}
+
+.roadmap_content {
+    display:flex;
+    flex-direction:column;
+    position: relative;
+}
+
+.roadmap_content::after {
+    content: '';
+    position: absolute;
+    bottom: -7%; 
+    left: 75%; 
+    transform: translateX(-50%); 
+    width: 100px; 
+    height: 100px; 
+    background-image: url('../images/Polygon2.png');
+    background-repeat: no-repeat;
+}
+
+html[dir=rtl] .tab1 {
+    order:2;
+}
+html[dir=rtl] .levels {
+    order:1;
+}
+
+html[dir=rtl] .roadmap-items {
+    flex-direction:row-reverse
 }
 
 @media (max-width: 973px) {
@@ -3339,9 +3379,7 @@ form .tel::after {
         width: 100%; 
     }
 
-    .timeline::before {
-        display: none; 
-    }
+
 
     .cards_content {
         justify-content: space-between;
@@ -3364,7 +3402,31 @@ form .tel::after {
     .cards_content:last-child::after {
         display: none; 
     }
+
+    .roadmap_content {
+        display:flex;
+        flex-direction:row;
+    }
+
+    .roadmap_content::after {
+        left:45%;
+        transform:rotate(30deg)
+    }
+
+    html[dir=rtl] .roadmap_content {
+        flex-direction: row-reverse;
+    
+    }
+
+    html[dir=rtl] .ourTracks_Container {
+        flex-direction: column-reverse;
+    }
+
+    html[dir=rtl] .levels {
+        flex-direction: row-reverse;
+    }
 }
+
 /* Our Tracks */
 
 /*==================================start structure==============================*/
