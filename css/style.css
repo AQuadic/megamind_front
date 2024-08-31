@@ -106,7 +106,7 @@ p {
 
 :root {
     --main_color: #ff7443;
-    --scound_color: #19a0bb;
+    --scound_color: #FEF5DB;
     --white_color: #ffffff;
 }
 
@@ -521,7 +521,7 @@ html[dir=rtl] .endnav ul li p {
     }
 
     .navbar-collapse .nav-link {
-        color:white
+        color:black
     }
     .navbar-nav {
         align-items: center;
