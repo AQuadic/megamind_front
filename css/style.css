@@ -3292,10 +3292,10 @@ form .tel::after {
 }
 
 .tab2.active::after {
+    position:absolute;
     top: 93%; 
     left: 54%; 
     transform: translateX(-50%); 
-
 }
 
 .tab2 {
@@ -3438,6 +3438,14 @@ html[dir=rtl] .tab1 {
 /* html[dir=rtl] .roadmap-items {
     flex-direction:row-reverse
 } */
+
+@media (max-width:450px) {
+    .tab2.active::after {
+        top: 93%; 
+        left: 65%; 
+        transform: translateX(-50%); 
+    }
+}
 
 @media (max-width: 973px) {
     .our_tracks {
