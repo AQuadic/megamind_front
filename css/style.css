@@ -3295,6 +3295,8 @@ form .tel::after {
 .timeline .roadmap_content img {
     border:8px solid #F17044;
     border-radius:20px;
+    width:127px;
+    height:162px
 }
 
 .roadmap-items {
@@ -3409,7 +3411,7 @@ html[dir=rtl] .roadmap-items {
     }
 
     .roadmap_content::after {
-        left:45%;
+        left:40%;
         transform:rotate(30deg)
     }
 
