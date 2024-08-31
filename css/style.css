@@ -2989,13 +2989,13 @@ form .tel::after {
 .card-content h2 {
     font-size: 1.875rem;
     font-weight: bold;
-    color: #23A6F0;
+    color: black;
 }
 
 .card-content span {
     font-size: 1.25rem;
     font-weight: bold;
-    color: #8EC2F2;
+    color: black;
 }
 
 .toggle-switch {
@@ -3074,10 +3074,32 @@ form .tel::after {
     left:50%
 }
 
+.control_buttons {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px
+}
+
 .card-button {
     display: flex;
     justify-content: center;
-    padding-top: 1.75rem;
+    align-items:center;
+    gap:10px
+}
+
+
+.arrow_down {
+    position: relative;
+    background-color: #ff7443;
+    color: white;
+    border-radius: 50%;
+    width:40px;
+    height:40px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    display:none;
 }
 
 .card-button button {
@@ -3086,14 +3108,56 @@ form .tel::after {
     border: 1px solid #ff7443;
     background-color: #ff7443;
     color: #fff;
-    width: 80%;
     border-radius: 0.375rem;
+}
+
+.card-Sbutton {
+    display: flex;
+    justify-content: center;
+}
+
+.card-Sbutton button {
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    border: 1px solid  rgb(45, 192, 113);
+    color: rgb(45, 192, 113);
+    border-radius: 0.375rem;
+    background-color:white;
+}
+
+.card-Sbutton button:hover {
+    border: 1px solid  rgb(45, 192, 113);
+    color: white;
+    background-color:rgb(45, 192, 113);
+}
+
+.all_details {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 25px 10px 25px;
+    display:none
+}
+
+.divide_price {
+    background-color: #e6f1fd;
+    align-self: center;
+    width: 100%;
+    height: 1px;
+    margin: 24px -24px 16px;
+}
+
+.all_details p {
+    font-weight: bold;
+    font-size: 20px;
+    color: #737373;
 }
 
 .card-features ul {
     margin-bottom: 2.5rem;
     text-align: left;
 }
+
 
 .card-features li {
     margin: 1rem 0;
@@ -3164,10 +3228,12 @@ form .tel::after {
     .card-features ul {
         display:none;
     }
+    .card-features.active ul {
+        display: block; 
+      }
 
-    .card-button {
-        padding-top:0px;
-        margin-bottom:10px
+    .control_buttons {
+        
     }
 
     .toggle-label-text {
@@ -3177,6 +3243,12 @@ form .tel::after {
     .save-button {
         font-size: 0.75rem;
         padding: 6px 12px; 
+    }
+    .arrow_down {
+        display:flex;
+    }
+    .all_details {
+        display:flex
     }
 }
 
@@ -3211,10 +3283,10 @@ form .tel::after {
     border-bottom-left-radius: 10px;
 }
 
-.tab1::after {
+.tabs .active::after {
     content:url('../images/Polygon1.png');
     position:absolute;
-    top: 98%;
+    top: 96%;
     left: 40%;
 }
 
@@ -3295,8 +3367,6 @@ form .tel::after {
 .timeline .roadmap_content img {
     border:8px solid #F17044;
     border-radius:20px;
-    width:127px;
-    height:162px
 }
 
 .roadmap-items {
@@ -3304,10 +3374,20 @@ form .tel::after {
     flex-direction:row;
     justify-content:center;
     align-items:end;
-    left:23%;
+    left:20%;
     position:absolute;
     top:72%
 }
+
+html[dir=rtl] .roadmap-items {
+    right:30%
+}
+
+html[dir=rtl] .roadmap_image  img{
+    transform: scaleX(-1);
+}
+
+
 
 .cards_content {
     display:flex;
@@ -3345,13 +3425,11 @@ form .tel::after {
 html[dir=rtl] .tab1 {
     order:2;
 }
-html[dir=rtl] .levels {
-    order:1;
-}
 
-html[dir=rtl] .roadmap-items {
+
+/* html[dir=rtl] .roadmap-items {
     flex-direction:row-reverse
-}
+} */
 
 @media (max-width: 973px) {
     .our_tracks {
@@ -3380,8 +3458,10 @@ html[dir=rtl] .roadmap-items {
         padding: 0;
         width: 100%; 
     }
-
-
+    
+    .roadmap-items {
+        display:none;
+    }
 
     .cards_content {
         justify-content: space-between;
@@ -3411,7 +3491,7 @@ html[dir=rtl] .roadmap-items {
     }
 
     .roadmap_content::after {
-        left:40%;
+        left:45%;
         transform:rotate(30deg)
     }
 
@@ -3470,6 +3550,11 @@ html[dir=rtl] .roadmap-items {
 .structure .parts .part1 img {
     width: 100%;
 }
+
+html[dir=rtl] .structure .parts .part1 img {
+    transform: scaleX(-1);
+}
+
 
 .structure .parts .part2 {
     background: #FFFFFF;
