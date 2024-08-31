@@ -3266,6 +3266,7 @@ form .tel::after {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
+    position:relative
 }
 
 .tab {
@@ -3288,6 +3289,13 @@ form .tel::after {
     position:absolute;
     top: 96%;
     left: 40%;
+}
+
+.tab2.active::after {
+    top: 93%; 
+    left: 54%; 
+    transform: translateX(-50%); 
+
 }
 
 .tab2 {
