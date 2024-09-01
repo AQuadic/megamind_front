@@ -2981,7 +2981,6 @@ form .tel::after {
 .card-content h5 {
     font-size: 1.5rem;
     font-weight: bold;
-    padding-bottom: 1rem;
 }
 
 .card-content p {
@@ -3077,7 +3076,6 @@ form .tel::after {
 
 .silver-icon img {
     position:absolute;
-    left:50%
 }
 
 .control_buttons {
