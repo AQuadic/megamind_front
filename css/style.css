@@ -191,7 +191,7 @@ html[dir=rtl] .head_title h2 {
 
     .head_title h2 {
         font-size: 20px;
-       
+
     }
     html[dir=rtl] .head_title h2 {
         font-size: 42px;
@@ -318,7 +318,7 @@ html[dir=rtl] .head_title h2 {
 
 /* Color of Toggler when collapsed */
 .navbar-toggler.collapsed .toggler-icon {
-    background-color: var(--scound_color);
+    /* background-color: var(--scound_color); */
 }
 
 .navbar-collapse {
@@ -2134,6 +2134,10 @@ html[dir=rtl] .gallery .maskgroup {
     width: 100%;
 
 }
+html[dir=rtl] .gallery .parts .part1 img {
+    transform: scaleX(-1);
+}
+
 
 .gallery .parts .part2 {
     flex: 1;
@@ -3351,6 +3355,7 @@ form .tel::after {
     border-radius: 20px;
     border: 1px dashed #ccc;
     border-left: 9px solid #FF6D25;
+    margin-left:15px;
     border-bottom: 9px solid #FF6D25;
 }
 
@@ -3391,13 +3396,13 @@ form .tel::after {
     flex-direction:row;
     justify-content:center;
     align-items:end;
-    left:20%;
+    left:0;
     position:absolute;
-    top:72%
+    top:53%
 }
 
 html[dir=rtl] .roadmap-items {
-    right:30%
+    right:0
 }
 
 html[dir=rtl] .roadmap_image  img{
@@ -4449,6 +4454,7 @@ footer .part .contact2 p {
 
 footer .part .links {
     display:flex;
+    gap:20px
 }
 
 footer .part .links .subLinks {
