@@ -3150,18 +3150,25 @@ form .tel::after {
     display:none
 }
 
+
 .divide_price {
     background-color: #e6f1fd;
     align-self: center;
     width: 100%;
     height: 1px;
-    margin: 24px -24px 16px;
+    margin: 24px -24px 0px;
 }
 
 .all_details p {
-    font-weight: bold;
-    font-size: 20px;
-    color: #737373;
+    color: #252B42;
+}
+
+.card-features h5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    margin-top: 1rem;
 }
 
 .card-features ul {
@@ -3206,6 +3213,19 @@ form .tel::after {
     justify-content: center;
 }
 
+.all-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+}
+
+.all-price h6 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
 @media (max-width: 768px) {
     .cards {
         padding: 0 0rem; 
@@ -3236,10 +3256,10 @@ form .tel::after {
         width:100%
     }
 
-    .card-features ul {
+    .card-features  {
         display:none;
     }
-    .card-features.active ul {
+    .card-features.active  {
         display: block; 
       }
 
@@ -3259,8 +3279,38 @@ form .tel::after {
         display:flex;
     }
     .all_details {
-        display:flex
+        display:flex;
+        margin-top: 1rem;
     }
+    .card-content {
+        text-align:start
+    }
+    .card-content p {
+       display:none;
+    }
+    .card-title {
+        display:flex;
+        justify-content:space-between;
+        margin-top:2rem;
+    }
+    .new-price {
+        color:#E77C40;
+    }
+    .silver-icon {
+        top: 15px;
+        left: 25%;
+    }
+    .all-price {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+    }
+    .all-price h6 {
+        font-size:18px;
+        font-weight:normal;
+    }
+    
 }
 
 /* End Price */
