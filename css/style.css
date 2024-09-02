@@ -534,7 +534,7 @@ html[dir=rtl] .endnav ul li p {
 
 @media (max-width: 580px) {
     .navbar-brand img {
-        width: 100px !important;
+        width: 190px !important;
     }
 
     .toggler-icon {
@@ -2337,6 +2337,9 @@ html[dir=rtl] .gallery .parts .part2 .cricle .item4 .content img {
     transform: rotate(15deg);
     font-size: 20px;
     color: #5C5959;
+    /* background:url('../images/whatsapp-logo.svg');
+    background-size:cover;
+    background-repeat: round; */
 }
 
 .gallery .parts .part2 .cricle .item .content h3 b {
@@ -2400,7 +2403,7 @@ html[dir=rtl] .gallery .parts .part2 .cricle .item3 .content h3 {
 }
 
 .gallery .parts .part2 .cricle .item4 .content h3 {
-    top: -140px;
+    top: -150px;
     z-index: -1;
     transform: rotate(-24.8deg);
     left: -10px;
@@ -2492,7 +2495,7 @@ html[dir=rtl] .gallery .parts .part2 .cricle .item4 .content h3 {
 
     .gallery .parts .part2 .cricle .item .content h3 {
         position: relative;
-        top: 0 !important;
+        /* top: 0 !important; */
         left: 0 !important;
         z-index: 1;
         transform: rotate(0deg) !important;
@@ -2506,7 +2509,10 @@ html[dir=rtl] .gallery .parts .part2 .cricle .item4 .content h3 {
         display: none;
     }
 
-
+    .gallery .parts .part2 .cricle .item4 .content h3 {
+        top: -130px;
+    }
+    
 }
 
 /*==================================end about==============================*/
