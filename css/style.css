@@ -106,7 +106,7 @@ p {
 
 :root {
     --main_color: #ff7443;
-    --scound_color: #FEF5DB;
+    --scound_color: #19a0bb;
     --white_color: #ffffff;
 }
 
@@ -516,7 +516,7 @@ html[dir=rtl] .endnav ul li p {
     }
 
     .navbar-collapse {
-        background-color: var(--scound_color);
+        background-color: #FEF5DB;
         border-radius: 10px;
     }
 
@@ -2931,7 +2931,6 @@ swiper-slide {
     height:430px !important;
 }
 
-
 .swiper_card {
     background-color: #ffffff; 
     border-radius: 16px; 
@@ -2992,6 +2991,10 @@ swiper-slide {
     align-items: center; 
     justify-content: space-around;
 }
+
+:dir(rtl) .button-items {
+    flex-direction: row-reverse;
+  }
 
 .button-items i {
     color: #E77C40;
