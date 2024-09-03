@@ -3132,9 +3132,8 @@ swiper-slide {
     justify-content:center;
 }
 
-.card-content .card-title.first,
-.card-content .card-title.third  {
-    margin-top:65px
+.margin-top-65 {
+    margin-top: 60px;
 }
 
 .card-content h5 {

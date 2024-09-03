@@ -1289,6 +1289,36 @@ setInterval(()=>odometer[i].innerHTML = value,100)
 
 </script>
 
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const cards = document.querySelectorAll('.card');
+    const hasCardOffer = Array.from(cards).some(card => card.querySelector('.card_offer'));
+
+    cards.forEach(card => {
+        const cardTitleFirst = card.querySelector('.card-title.first');
+        const cardTitleThird = card.querySelector('.card-title.third');
+
+        if (hasCardOffer) {
+            if (cardTitleFirst) {
+                cardTitleFirst.classList.add('margin-top-65');
+            }
+            if (cardTitleThird) {
+                cardTitleThird.classList.add('margin-top-65');
+            }
+        } else {
+            if (cardTitleFirst) {
+                cardTitleFirst.classList.remove('margin-top-65');
+            }
+            if (cardTitleThird) {
+                cardTitleThird.classList.remove('margin-top-65');
+            }
+        }
+    });
+});
+
+
+</script>
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
                 integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
                 crossorigin="anonymous" referrerpolicy="no-referrer"></script>
