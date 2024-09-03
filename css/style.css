@@ -2941,26 +2941,27 @@ swiper-container {
 }
 
 swiper-slide {
-    width: 250px !important;
-    height: 430px !important;
+    /* width: 250px !important;
+    height: 430px !important; */
 }
 
 .swiper_card {
-    background-color: #ffffff;
+    background-color: #000000;
     border-radius: 16px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px !important;
+    height: 230px !important; 
     padding: 10px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 
 .card-img {
-    width: 230px;
-    height: 230px;
+    width: 100%;
+    height: 100px;
     border-radius: 8px;
-    object-fit: none;
 }
 
 .swipercard-title {
@@ -4650,6 +4651,43 @@ html[dir=rtl] .pay h1 {
     width: 100%;
     padding: 5px
 }
+
+.gallerys {
+    display: flex;
+    overflow-x: auto; /* 'auto' instead of 'scroll', but both should work */
+    scroll-behavior: smooth;
+    width: 900px; /* Ensure this width matches the content */
+}
+
+.gallerys div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Ensures three equal columns */
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+}
+
+.gallerys div img {
+    width: 100%;
+}
+
+.gallery_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% auto;
+}
+
+#backBtn, #nextBtn {
+    width: 50px;
+    cursor: pointer;
+    margin: 40px;
+}
+
+.gallerys::-webkit-scrollbar {
+    display: none;
+}
+
 
 /* End Last section */
 
@@ -7017,4 +7055,3 @@ td {
     text-align: start;
 
 }
-

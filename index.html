@@ -377,7 +377,7 @@
     <p>More than <span>+25,000</span> project Finished by Our Developer</p>
   </div>
   </div>
-<swiper-container class="mySwiper" slides-per-view="5" centered-slides="false" loop="true" space-between="30"  >
+<!-- <swiper-container class="mySwiper" slides-per-view="5" centered-slides="false" loop="true" space-between="30"  >
 <swiper-slide>
   <div class="swiper_card">
     <img src="./images/aboutimg.webp" alt="Description of the image" class="card-img">
@@ -427,7 +427,7 @@
                   <p class="card-description">Last month we announced Glide’s first level of </p>
                 </div> 
                 </swiper-slide>
-</swiper-container>
+</swiper-container> -->
 <div class="button-items" >
   <i class="fa-solid fa-chevron-left" ></i>
   <div class="contactButton">
@@ -1014,7 +1014,30 @@
       </div>
     </div>
 
-        <div class="mySwiper" slides-per-view="5" centered-slides="false" loop="true" space-between="30">
+    <div class="gallery_wrap">
+      <img src="./images/back.png" id="backBtn" alt="">
+      <div class="gallerys">
+        <div>
+          <span><img src="./images/child.webp" alt=""></span>
+          <span><img src="./images/child.webp" alt=""></span>
+          <span><img src="./images/child.webp" alt=""></span>      
+        </div>
+        <div>
+          <span><img src="./images/child.webp" alt=""></span>
+          <span><img src="./images/child.webp" alt=""></span>
+          <span><img src="./images/child.webp" alt=""></span>      
+        </div>
+        <div>
+          <span><img src="./images/child.webp" alt=""></span>
+          <span><img src="./images/child.webp" alt=""></span>
+          <span><img src="./images/child.webp" alt=""></span>      
+        </div>
+       </div>
+      <img src="./images/next.png" id="nextBtn" alt="">
+    </div>
+    
+
+        <!-- <div class="mySwiper" slides-per-view="5" centered-slides="false" loop="true" space-between="30">
             <div class="swiper-wrapper">
 		                        <div class="swiper-slide">
 
@@ -1071,7 +1094,7 @@
       </div>
       
             </div>
-        </div>
+        </div> -->
 
 
       <a href="./viewMore.html">
@@ -1333,6 +1356,26 @@ document.addEventListener("DOMContentLoaded", function() {
       prevEl: '.swiper-button-prev',
     },
   });
+  </script>
+
+  <script>
+    let scrollContainer = document.querySelector(".gallerys");
+    let backBtn = document.getElementById("backBtn");
+    let nextBtn = document.getElementById("nextBtn");
+
+    scrollContainer.addEventListener("Wheel", (evt) => {
+      evt.preventDefault();
+      scrollContainer.scrollLeft += evt.deltaY;
+    });
+
+    nextBtn.addEventListener("click", ()=> {
+      scrollContainer.style.scrollBehavior = "smooth"
+      scrollContainer.scrollLeft += 900;
+    });
+    backBtn.addEventListener("click", ()=> {
+      scrollContainer.style.scrollBehavior = "smooth"
+      scrollContainer.scrollLeft -= 900;
+    });
   </script>
 </body>
 </html>
