@@ -1014,27 +1014,6 @@
       </div>
     </div>
 
-    <div class="gallery_wrap">
-      <img src="./images/back.png" id="backBtn" alt="">
-      <div class="gallerys">
-        <div>
-          <span><img src="./images/child.webp" alt=""></span>
-          <span><img src="./images/child.webp" alt=""></span>
-          <span><img src="./images/child.webp" alt=""></span>      
-        </div>
-        <div>
-          <span><img src="./images/child.webp" alt=""></span>
-          <span><img src="./images/child.webp" alt=""></span>
-          <span><img src="./images/child.webp" alt=""></span>      
-        </div>
-        <div>
-          <span><img src="./images/child.webp" alt=""></span>
-          <span><img src="./images/child.webp" alt=""></span>
-          <span><img src="./images/child.webp" alt=""></span>      
-        </div>
-       </div>
-      <img src="./images/next.png" id="nextBtn" alt="">
-    </div>
     
 
          <div class="blogSwiper" slides-per-view="5" centered-slides="false" loop="true" space-between="30">
@@ -1358,24 +1337,6 @@ document.addEventListener("DOMContentLoaded", function() {
   });
   </script>
 
-  <script>
-    let scrollContainer = document.querySelector(".gallerys");
-    let backBtn = document.getElementById("backBtn");
-    let nextBtn = document.getElementById("nextBtn");
 
-    scrollContainer.addEventListener("Wheel", (evt) => {
-      evt.preventDefault();
-      scrollContainer.scrollLeft += evt.deltaY;
-    });
-
-    nextBtn.addEventListener("click", ()=> {
-      scrollContainer.style.scrollBehavior = "smooth"
-      scrollContainer.scrollLeft += 900;
-    });
-    backBtn.addEventListener("click", ()=> {
-      scrollContainer.style.scrollBehavior = "smooth"
-      scrollContainer.scrollLeft -= 900;
-    });
-  </script>
 </body>
 </html>
