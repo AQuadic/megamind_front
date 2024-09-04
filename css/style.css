@@ -2965,6 +2965,15 @@ form .tel::after {
     object-fit: cover;
 }
 
+.blogSwiperSecond-container {
+    width: 100%;
+    overflow: hidden;
+}
+.blogSwiperSecond {
+    width: 100%;
+}
+
+
 .swipercard-title {
     text-align: center;
     margin: 12px 0;
