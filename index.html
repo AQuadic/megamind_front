@@ -1101,9 +1101,11 @@
               </a>
           </div>
       </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
 
       <div class="swiper-pagination"></div>
-  </div>
+    </div>
   
 
       <a href="./viewMore.html">
@@ -1365,6 +1367,10 @@ document.addEventListener("DOMContentLoaded", function() {
                     el: '.swiper-pagination',
                     clickable: true,
                 },
+                navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
                     breakpoints: {
                       200: {
                         slidesPerView: 1,
