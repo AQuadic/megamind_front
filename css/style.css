@@ -3488,8 +3488,15 @@ html[dir="rtl"] .card-description  {
     }
 
     .card-content p {
-        display: none;
+        position: absolute;
+        left: 73%;
+        top: 44px;
     }
+
+    .card-content .secondP{
+        top: 99px;
+    }
+
 
     .card-title {
         display: flex;
