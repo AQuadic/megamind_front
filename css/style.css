@@ -2437,7 +2437,7 @@ html[dir=rtl] .gallery .parts .part2 .cricle .item4 .content h3 {
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        height: 900px;
+        height: 700px;
     }
 
     .gallery .parts .part2 {
