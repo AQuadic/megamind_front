@@ -4671,6 +4671,41 @@ html[dir=rtl] .pay h1 {
 /* End Last section */
 
 
+/* Tools */
+.tool_icons {
+    display: flex;
+    justify-content: center;
+    gap:30px;
+}
+
+.tool_icons div img {
+    width:50px;
+    height:50px;
+    background-color:#ccc;
+    padding:10px;
+    border-radius:10px;
+}
+
+.tool_icons div p {
+    font-weight:600;
+}
+
+.tool_icons div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+
+@media (max-width: 620px) {
+    .tool_icons {
+        flex-direction:column;
+    }
+}
+
+/* Tools */
+
 /* Start View More */
 /* Start Header Section */
 .header-img {
