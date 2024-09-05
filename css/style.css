@@ -2965,8 +2965,8 @@ form .tel::after {
 
 .swiper-button-next,
 .swiper-button-prev {
-    background-color: white;
-    color: black !important;
+    background-color: rgba(231, 124, 64, 0.1);
+    color: #E77C40 !important;
     border-radius: 50%;
     padding: 25px;
 }
