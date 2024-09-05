@@ -389,8 +389,8 @@ html[dir=rtl] .navbar .btn-lang p {
 }
 
 .endnav .btn_nav {
-    width: 74px;
-    height: 30px;
+    width: 94px;
+    height: 40px;
     font-size: 14px;
     font-family: "DK Cool";
 
@@ -2945,8 +2945,13 @@ form .tel::after {
     height: 430px !important;
 }
 .blogSwiper {
-    overflow:hidden
+    overflow:hidden;
+    position:relative
 }
+.swiper-wrapper {
+    position:relative;
+}
+
 .swiper_card {
     background-color: #ffffff;
     border-radius: 16px;
@@ -2982,8 +2987,14 @@ form .tel::after {
 
 .card-description {
     color: #7C7C86;
+    text-align:left;
 }
 
+html[dir="rtl"] .card-description  {
+    {
+        text-align:right;
+    }    
+}
 .contactButton {
     display: flex;
     align-items: center;
@@ -4623,13 +4634,6 @@ html[dir=rtl] .pay h1 {
 .swiper_title {
     margin-top:20px
 }
-
-/* .Iterate .card-container .cardI .img {
-    width: 254px;
-    height: 142px;
-    border-radius: 10px 10px 0 0;
-    background: linear-gradient(107.49deg, #EAEAEB 0%, #F7F7F7 100%);
-} */
 
 .cardI h2 {
     font-size: 18px;
