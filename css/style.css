@@ -3126,6 +3126,17 @@ swiper-slide {
     padding: 2.5rem 1.5rem 0 1.5rem;
 }
 
+.cardIcon {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.card-content .card-title.first,
+.card-content .card-title.third  {
+    margin-top:65px
+}
+
 .card-content h5 {
     font-size: 1.5rem;
     font-weight: bold;
@@ -3222,8 +3233,20 @@ swiper-slide {
 }
 
 
-.silver-icon img {
-    position: absolute;
+.card_offer {
+    color:white;
+    background-color:#E77C40;
+    border-radius:17px;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:10px
+}
+
+.card_offer h4{
+    color:white;
 }
 
 .control_buttons {
@@ -3466,6 +3489,10 @@ swiper-slide {
         font-size: 18px;
         font-weight: normal;
 
+    }
+
+    .cardIcon {
+        justify-content: start;
     }
 
 }
