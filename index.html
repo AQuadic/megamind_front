@@ -1009,43 +1009,65 @@
       </div>
     </div>
 
-    <div class="card-container">
-  <div class="cardI">
-    <div>
-      <img src="./images/world.webp" style="width: 100%; height: 100%;" alt="">
-    </div>
-    <h2>Sales Enablement</h2>
-    <p>Understanding Lead Behavior Monitoring</p>
-    <span>Aug 7  &emsp; 3 min read</span>
-  </div>
-  
-  <div class="cardI">
-    <div>
-      <img src="./images/world.webp" style="width: 100%; height: 100%;" alt="">
-    </div>
-      <h2>Sales Enablement</h2>
-    <p>Comparative Analysis of Customer Movement Tracking Tools</p>
-    <span>Aug 4  &emsp; 4 min read</span>
-  </div>
-  
-  <div class="cardI">
-        <div>
-      <img src="./images/world.webp" style="width: 100%; height: 100%;" alt="">
-    </div>
-    <h2>Sales Enablement</h2>
-    <p>The Value of Buying Intent Data</p>
-    <span>Aug 2  &emsp; 2 min read</span>
-  </div>
-  
-  <div class="cardI">
-    <div>
-      <img src="./images/world.webp" style="width: 100%; height: 100%;" alt="">
-    </div>
-    <h2>Sales Enablement</h2>
-    <p>Guide to Sales Opportunity Identification</p>
-    <span>Aug 2  &emsp; 2 min read</span>
-  </div>
-    </div>
+  <swiper-container class="mySwiper" slides-per-view="5" centered-slides="false" loop="true" space-between="30">
+    <swiper-slide>
+      <div class="swiper_card">
+        <img src="./images/world.webp" alt="Description of the image" class="card-img">
+        <h6 class="swiper_title">Meet your Glide Certified Community</h6>
+        <p class="card-description">Last month we announced Glide’s first level of </p>
+      </div> 
+      </swiper-slide>
+      <swiper-slide>
+        <div class="swiper_card">
+          <img src="./images/world.webp" alt="Description of the image" class="card-img">
+          <h6 class="swiper_title">Meet your Glide Certified Community</h6>
+          <p class="card-description">Last month we announced Glide’s first level of </p>
+        </div> 
+        </swiper-slide>
+        <swiper-slide>
+          <div class="swiper_card">
+            <img src="./images/world.webp" alt="Description of the image" class="card-img">
+            <h6 class="swiper_title">Meet your Glide Certified Community</h6>
+            <p class="card-description">Last month we announced Glide’s first level of </p>
+          </div> 
+          </swiper-slide>
+          <swiper-slide>
+            <div class="swiper_card">
+              <img src="./images/world.webp" alt="Description of the image" class="card-img">
+              <h6 class="swiper_title">Meet your Glide Certified Community</h6>
+              <p class="card-description">Last month we announced Glide’s first level of </p>
+            </div> 
+            </swiper-slide>
+            <swiper-slide>
+              <div class="swiper_card">
+                <img src="./images/world.webp" alt="Description of the image" class="card-img">
+                <h6 class="swiper_title">Meet your Glide Certified Community</h6>
+                <p class="card-description">Last month we announced Glide’s first level of </p>
+              </div> 
+              </swiper-slide>
+              <swiper-slide>
+                <div class="swiper_card">
+                  <img src="./images/world.webp" alt="Description of the image" class="card-img">
+                  <h6 class="swiper_title">Meet your Glide Certified Community</h6>
+                  <p class="card-description">Last month we announced Glide’s first level of </p>
+                </div> 
+                </swiper-slide>
+                <swiper-slide>
+                  <div class="swiper_card">
+                    <img src="./images/world.webp" alt="Description of the image" class="card-img">
+                    <h6 class="swiper_title">Meet your Glide Certified Community</h6>
+                    <p class="card-description">Last month we announced Glide’s first level of </p>
+                  </div> 
+                  </swiper-slide>
+                  <swiper-slide>
+                    <div class="swiper_card">
+                      <img src="./images/world.webp" alt="Description of the image" class="card-img">
+                      <h6 class="swiper_title">Meet your Glide Certified Community</h6>
+                      <p class="card-description">Last month we announced Glide’s first level of </p>
+                    </div> 
+                    </swiper-slide>
+  </swiper-container>
+
 
       <a href="./viewMore.html">
         <button>
@@ -1245,6 +1267,7 @@ setInterval(()=>odometer[i].innerHTML = value,100)
   prevArrow:'<button class="slick-prev"> < </button>',
   nextArrow:'<button class="slick-next"> > </button>',
   
+  
  /*         responsive: [                        
               {
                 breakpoint: 576,
@@ -1261,6 +1284,18 @@ setInterval(()=>odometer[i].innerHTML = value,100)
 
 </script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper('.mySwiper', {
+    slidesPerView: 5,
+    centeredSlides: false,
+    loop: true,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+  </script>
 </body>
 </html>
