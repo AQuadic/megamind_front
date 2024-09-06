@@ -3495,6 +3495,11 @@ swiper-slide {
         justify-content: start;
     }
 
+    .card-content .card-title.first,
+    .card-content .card-title.third  {
+    margin-top:0px;
+}
+
 }
 
 /* End Price */
