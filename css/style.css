@@ -2404,7 +2404,7 @@ html[dir=rtl] .gallery .parts .part2 .cricle .item3 .content h3 {
 }
 
 .gallery .parts .part2 .cricle .item4 .content h3 {
-    top: -150px;
+    top: -137px;
     z-index: -1;
     transform: rotate(-24.8deg);
     left: -10px;
@@ -3633,7 +3633,7 @@ html[dir='rtl'] .tabs .active::after {
     border-radius: 20px;
     border: 1px dashed #ccc;
     border-left: 9px solid #FF6D25;
-    margin-left: 15px;
+    /* margin-left: 15px; */
     border-bottom: 9px solid #FF6D25;
 }
 
