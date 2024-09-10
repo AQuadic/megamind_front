@@ -4738,6 +4738,29 @@ html[dir=rtl] .pay h1 {
     line-height:2;
 }
 
+.blog_buttons {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:15px;
+    margin-bottom:50px
+}
+
+.blog_buttons a{
+    width:100px;
+    font-size: 14px;
+    line-height: 18px;
+    background: #ff7443;
+    border-radius: 10px;
+    padding: 6px 8px;
+    color: white;
+    margin: 0;
+    font-family: "DK Cool";
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
 @media (min-width: 768px) {
     .content {
         margin-left: 6rem;
