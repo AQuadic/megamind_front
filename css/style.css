@@ -4778,6 +4778,10 @@ html[dir=rtl] .pay h1 {
     color: #a0aec0;
 }
 
+.Paragraphs >p,ul {
+    margin-bottom:25px
+}
+
 /* End Header Section */
 
 /* End View More */
